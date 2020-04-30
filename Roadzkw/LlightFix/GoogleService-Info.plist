@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1084454451319-m53b3hmeanbtcvajrjch8f1asmm5u1oi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1084454451319-m53b3hmeanbtcvajrjch8f1asmm5u1oi</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1084454451319-8nu3o07p3p29fn3j6gi5fof9g0uop95i.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBkW7Zq-YQs-MVO6W26_tVB4lq8P7Q0g9w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1084454451319</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.line.roadz1</string>
+	<key>PROJECT_ID</key>
+	<string>roadz-5ca89</string>
+	<key>STORAGE_BUCKET</key>
+	<string>roadz-5ca89.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1084454451319:ios:137f9475180e7b02576e72</string>
+	<key>DATABASE_URL</key>
+	<string>https://roadz-5ca89.firebaseio.com</string>
+</dict>
+</plist>

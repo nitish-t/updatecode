@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.roadz.modules.Notification.NotificationListRow_ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/contenerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d16"
+        android:paddingTop="@dimen/d16"
+        android:paddingRight="@dimen/d16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:layout_marginBottom="@dimen/d5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notificationTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_weight="1"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="start|center"
+                android:text="New Request. "
+                android:textAlignment="viewStart"
+                android:textColor="#333132"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notificationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="end|center"
+                android:text="10m ago"
+                android:textAlignment="viewEnd"
+                android:textColor="#333132"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notificationBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:fontFamily="@font/hkgrotesk_regular"
+            android:gravity="start|center"
+            android:text="Your Roadside Assistant - Tire - has been requested. "
+            android:textAlignment="viewStart"
+            android:textColor="#333132"
+            android:layout_marginBottom="@dimen/d10"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".3dp"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_marginBottom="@dimen/d8"
+        android:background="#707070" />
+
+</com.app.roadz.modules.Notification.NotificationListRow_>

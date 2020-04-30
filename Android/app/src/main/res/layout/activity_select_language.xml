@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_imag_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center"
+        android:animateLayoutChanges="true"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="@dimen/d60"
+            android:gravity="top|center"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".7"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_splash_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/englishBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginRight="@dimen/d5"
+                android:layout_weight="1"
+                android:background="@drawable/ic_lang_bg"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="center"
+                android:lines="1"
+                android:minHeight="@dimen/d46"
+                android:text="English"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:id="@+id/arabicBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginRight="@dimen/d5"
+                android:layout_weight="1"
+                android:background="@drawable/ic_lang_bg"
+                android:fontFamily="@font/cairo_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:minHeight="@dimen/d46"
+                android:text="عربي"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

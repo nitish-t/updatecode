@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.roadz.modules.ServicesOverview.ServicesOverviewListRow_ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/d10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d16"
+        android:paddingRight="@dimen/d16">
+
+        <LinearLayout
+            android:id="@+id/titleView"
+            android:layout_width="@dimen/d100"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/image_bg"
+                    android:layout_width="@dimen/d50"
+                    android:layout_height="@dimen/d50"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_servies_test_1" />
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:indeterminateTint="@color/colorAccent"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="center"
+                android:paddingTop="@dimen/d5"
+                android:text="Battery Recharge"
+                android:textColor="#333132"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="@dimen/d10"
+            android:layout_marginEnd="@dimen/d5"
+            android:fontFamily="@font/hkgrotesk_bold"
+            android:gravity="start|center"
+            android:lineSpacingExtra="@dimen/d5"
+            android:text="@string/demo_unlimited_roadside_assistant_requests_for_one_year"
+            android:textColor="#333132"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginRight="@dimen/d20"
+        android:background="#80848384" />
+
+
+</com.app.roadz.modules.ServicesOverview.ServicesOverviewListRow_>

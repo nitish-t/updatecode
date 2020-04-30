@@ -1,0 +1,495 @@
+/*************************  *************************/
+//
+//  Localizable.strings
+//  LlightFix
+//
+//  Created by  on 6/26/19.
+//  Copyright © 2019 LightFix iCode. All rights reserved.
+//
+
+
+//Font
+"Cairo-Regular"    = "HurmeGeometricSans1-Regular";
+"Cairo-Bold"       = "HurmeGeometricSans1-Black";
+"Cairo-ExtraLight" = "HurmeGeometricSans1-Light";
+
+"KD" = "KD";
+
+"ic_back" = "ic_back";
+"ic_menu" = "ic_menu";
+"bg_views" = "bg_views";
+"ic_arrow" = "ic_arrow";
+
+//Common
+"Error"                                                                           = "Error";
+"Info"                                                                            = "Info";
+"Done"                                                                            = "Done";
+"OK"                                                                              = "Ok";
+"Cancel"                                                                          = "Cancel";
+"Attention"                                                                       = "Attention";
+"loginRequiredAttention"                                                            = "Login Required";
+"An error occurred"                                                               = "An error occurred";
+"English"                                                                         = "English";
+"Arabic"                                                                          = "عربي";
+"No Data To Show"                                                                 = "Nothing to See Here!";
+"TitleChangeLanguage"                                                             = "Do you want Change Language?";
+"SubTitleChangeLanguage"                                                          = "The app will be turn off";
+"HTMLDirection"                                                                   = "ltr";
+"Settings"                                                                        = "Settings";
+"Login"                                                                           = "Login";
+"Login Permission"                                                                = "This feature is only for registrants in the application \n Do you want to log in?";
+"This service will be available later"                                            = "This service will be available later";
+"Need To Permission"                                                              = "Need To Permission";
+"The application is unable to give you valid data without getting your location!" = "The application is unable to give you valid data without getting your location!";
+"Do you want to take a photo or a selection from the Gallery!"                    = "Do you want to take a photo or a selection from the Gallery";
+"TitleMessageEmail"                                                               = "Message Title";
+"MessageBodyEmail"                                                                = "Message Body";
+"Capture image"                                                                   = "Capture image";
+"Chose From Gallery"                                                              = "Chose From Gallery";
+"IQDropDownTextField_optionalItemText"                                            = "unselect";
+"PleaseAcceptTheTerms"                                                            = "Please accept the terms";
+"DoneSuccessfully"                                                                = "Reset password has been sent to your email";
+"TextFeildValidation"                                                             = "Sorry, The %@ is required";
+"alreadyExisted"                                                                  = "%@";
+"InvalidEmail"                                                                    = "Sorry, Invalid email address";
+"InvalidPassword"                                                                 = "The Password is Incorrect";
+"MobileDigits"                                                                    = "Mobile number must be %@ digits";
+"Login"                                                                           = "Yes";
+"Logout"                                                                          = "Logout";
+"Signin"                                                                          = "Sign in";
+"Signout"                                                                         = "Sign out";
+"Register"                                                                        = "Register";
+"Registration"                                                                    = "Signup";
+"ForgeotPassword"                                                                 = "Forgot Password";
+"Search"                                                                          = "Search";
+"Code"                                                                            = "Code";
+"UserName"                                                                        = "User Name";
+"FullName"                                                                        = "Full Name";
+"Name"                                                                            = "Name";
+"Email"                                                                           = "Email";
+"Password"                                                                        = "Password";
+"OldPassword"                                                                     = "Old Password";
+"NewPassword"                                                                     = "New Password";
+"MobileNumber"                                                                    = "Mobile Number";
+"CurrentLocation"                                                                 = "Current Location";
+"Address"                                                                         = "Address";
+"Country"                                                                         = "Country";
+"City"                                                                            = "City";
+"Message"                                                                         = "Message";
+"BirthDay"                                                                        = "Birth Day";
+"Male"                                                                            = "Male";
+"Female"                                                                          = "Female";
+"AboutUS"                                                                         = "About Us";
+"ContactUS"                                                                       = "Contact Us";
+"SearchHere"                                                                      = "Search here ,,,";
+"requestSignup"                                                                    = "YES, SIGN UP";
+"SuccessSendRequest"                                                              = "Thank you for contacting us, we will respond as soon as possible";
+"FileSize"                                                                        = "Selected file must be less than 10 MB";
+"LoginIsRequired"                                                                 = "This feature requires registration, do you want to register?" ;
+"logInSuccess"                                                                    = "logged in successfully.";
+"logOutSuccess"                                                                   = "logged out successfully.";
+"UpdateProfileSuccess"                                                            = "Profile updated successfully.";
+"RegisterSuccess"                                                                 = "Successfully registered.";
+"ResetPasswordSuccess"                                                            = "Password reset successfully done.";
+"ResetCodeToResetPasswordSuccess"                                                 = "Password reset code sent successfully.";
+"SuccessfullyAddedToFavorites"                                                    = "Successfully added to favorites";
+"SuccessfullyRemovedToFavorites"                                                  = "Successfully removed from favorites";
+"DoYouWantToLogout"                                                               = "Do You Want To Logout?";
+"SelectCarToContinue"                                                             = "You need to choose a car";
+"CallUS"                                                                          = "Call Us";
+"Renew"                                                                           = "RENEW";
+"AreYouSureSelectThisLocation"                                                    = "Are You Sure Select This Location?";
+"messege_application_will_exit"                                                   = "The application will close now .. please open it again for the application language";
+"SelectServiceToContinue"                                                         = "Please select a problem";
+"Demo" = "Demo";
+"YouNeedToSelectLocationFirst" = "You Need To Select Location First";
+"emailPlaceholder"                                                                = "Your email address";
+
+
+//Home
+"HomeVC.lblEmergency.title"   = "  Roadside Assistant  ";
+"HomeVC.lblMaintenance.title" = "Maintenance";
+"HomeVC.lblComingSoon.title"  = "Coming Soon!";
+"HomeVC.btnOrder.title"       = "Request";
+"HomeVC.btnOrder.title.Demo"  = "Try To Request";
+
+
+//AdsVC
+"AdsVC_btnNext_Title"      = "Next";
+"AdsVC_btnBack_Title"      = "Back";
+"AdsVC_btnNext_Title_Done" = "Skip";
+
+
+
+//TutorialVC
+"TutorialVC.lblTitle.text" = "User Guide";
+"TutorialVC.btnStart.text" = "Get Started";
+
+
+//LoginVC
+"LoginVC.lblEmail.text"           = "Email";
+"LoginVC.lblPassword.text"        = "Password";
+"LoginVC.btnForgetPassword.text"  = "Forget Password?";
+"LoginVC.btnGest.text"            = "Continue as a Guest";
+"LoginVC.btnLogin.text"           = "LOG IN";
+"LoginVC.lblOrTitle.text"         = "Or";
+"LoginVC.lblDontHaveAccount.text" = "Don't Have Roadz Account ?";
+"LoginVC.btnSignUP.text"          = "Don’t have an account? Sign up";
+
+
+
+//ForgetPasswordVC
+"ForgetPasswordVC.lblTitle.text"          = "Enter your email Below to receive new\npassword";
+"ForgetPasswordVC.lblEmail.text"          = "Email";
+"ForgetPasswordVC.btnForgetPassword.text" = "Reset Password";
+"ForgetPasswordVC.lblOrTitle.text"        = "Or";
+"ForgetPasswordVC.btnLogin.text"          = "LOG IN";
+
+
+
+//RegistrationVC
+"RegistrationVC.lblTitle1.text"          = "Add Personal Details";
+"RegistrationVC.lblTitle2.text"          = "Add Car Details";
+"RegistrationVC.lblFullName.text"        = "Full Name";
+"RegistrationVC.lblEmail.text"           = "Email";
+"RegistrationVC.lblPassword.text"        = "Password";
+"RegistrationVC.lblConfirmPassword.text" = "Confirm Password";
+"RegistrationVC.lblMobile.text"          = "Mobile Number";
+"RegistrationVC.lblNext.text"            = "Next";
+"RegistrationVC.lblRegister.text"        = "SUBMIT";
+"RegistrationVC.lblCarMaker.text"        = "Car Maker";
+"RegistrationVC.lblCarModel.text"        = "Car Model";
+"RegistrationVC.lblCarYear.text"         = "choose the year";
+"RegistrationVC.lblCarPlateNumber.text"  = "Car Plate Number";
+"RegistrationVC.lblCarColor.text"        = "Car Color";
+"RegistrationVC.presentPickerView.title" = "Chose from list";
+"RegistrationVC.lblTemsTitle.text"       = " I agree to the";
+"RegistrationVC.lblTemsValue.text"       = "Terms & Condition";
+
+
+
+//MenuVC
+"MenuVC.lblPowered.text"               = "Powered by line";
+"SideMenuVC.CellType.home"             = "Home";
+"SideMenuVC.CellType.profile"          = "My Profile";
+"SideMenuVC.CellType.login"            = "Log in/Register";
+"SideMenuVC.CellType.my_cars"          = "My Cars";
+"SideMenuVC.CellType.my_subscriptions" = "My Subscriptions";
+"SideMenuVC.CellType.our_services"     = "Our Services";
+"SideMenuVC.CellType.about_us"         = "About Us";
+"SideMenuVC.CellType.contact_us"       = "Contact Us";
+"SideMenuVC.CellType.settings"         = "Settings";
+"SideMenuVC.CellType.logout"           = "Logout";
+"SideMenuVC.CellType.privacy"          = "Privacy Policy";
+
+
+//OurServicesVC
+"OurServicesVC.title"               = "Our Services";
+"OurServicesVC.btnMaintenance.text" = "Maintenance";
+"OurServicesVC.btnEmergency.text"   = "Emergency";
+"OurServicesVC.btnSubscribe.text"   = "Subscribe";
+
+
+
+//NotificationsListVC
+"NotificationsListVC.title"            = "Notifications";
+"NotificationsListVC.emptyTitle"       = "Nothing Here !!!";
+"NotificationsListVC.emptyDescription" = "you don't have yet any notifications\nfrom Roadz";
+
+
+
+//ProfileVC
+"ProfileVC.title"                          = "My Profile";
+"ProfileVC.btnChange.text"                 = "UPDATE";
+"ProfileVC.btnChangePassword.text"         = "Change password";
+"ProfileVC.lblEmailStatus.text_active"     = "Verified";
+"ProfileVC.lblEmailStatus.text_not_active" = "Not verify";
+"ProfileVC.btnResendEmail.text"            = "Resend Verification Link";
+
+
+//ContactUSVC
+"ContactUSVC.title"                       = "Contact Us";
+"ContactUSVC.lblTitle.text"               = "Leave us a message";
+"ContactUSVC.lblName.text"                = "Name";
+"ContactUSVC.textName.placeholder"        = "enter your name";
+"ContactUSVC.lblEmail.text"               = "Email";
+"ContactUSVC.textEmail.placeholder"       = "enter your email";
+"ContactUSVC.lblPhoneNumber.text"         = "Phone Number";
+"ContactUSVC.textPhoneNumber.placeholder" = "enter your phone number";
+"ContactUSVC.lblMessage.text"             = "Message";
+"ContactUSVC.textMessage.placeholder"     = "enter your message";
+"ContactUSVC.btnSubmit.text"              = "SUBMIT";
+"ContactUSVC.lblInfo.text"                = "Info:";
+"ContactUSVC.lblPhoneNumnerInfo.text"     = "Phone Number:";
+"ContactUSVC.lblEmailInfo.text"           = "Email:";
+
+
+
+//SettingsVC
+"SettingsVC.title"                   = "Settings";
+"SettingsVC.lblLang.text"            = "Language";
+"SettingsVC.btnEN.text"              = "EN";
+"SettingsVC.btnAR.text"              = "AR";
+"SettingsVC.lblNotification.text"    = "Notifications";
+"SettingsVC.btnNotificationOn.text"  = "On";
+"SettingsVC.btnNotificationOFF.text" = "OFF";
+"SettingsVC.lblTerms.text"           = "Terms & Conditions";
+"SettingsVC.lblPrivacyPolicy.text"   = "Privacy Policy";
+
+
+
+//MySubscriptionsVC
+"MySubscriptionsVC.title"                     = "My Subscriptions";
+"MySubscriptionsTableViewCell.OrderID.text"   = "Order ID :";
+"MySubscriptionsTableViewCell.CarModel.text"  = "Car Model :";
+"MySubscriptionsTableViewCell.StartDate.text" = "Start Date :";
+"MySubscriptionsTableViewCell.EndDate.text"   = "End Date :";
+"MySubscriptionsTableViewCell.Amount.text"    = "Amount :";
+
+
+
+//MyCarsVC
+"MyCarsVC.title"                                 = "My Cars";
+"MyCarsTableViewCell.lblSubscriptionNumber.text" = "Reference ID.";
+"MyCarsTableViewCell.lblPlateNumber.text"        = "Plate Number";
+"MyCarsTableViewCell.lblCarColor.text"           = "Car Color";
+"MyCarsTableViewCell.btnDelete.text"             = "Delete";
+"MyCarsTableViewCell.btnDelete.alert.msg"        = "Are you sure you want to delete the car?";
+"MyCarsVC.btnAddCar.text"                        = "Add Car";
+"MyCarsVC.lblNoSubscription.text"                = "No Subscription";
+"MyCarsVC.lblStatus.text"                        = "inactive";
+"MyCarsVC.lblStatus.notPaid"                     = "not paid";
+"MyCarsVC.lblStatus.active"                      = "active";
+
+//AddCarVC
+"AddCarVC.title" = "Add Car";
+"AddCarVC.btnAddCar.text" = "Send";
+"AddCarVC.txtCarColor.placeholder" = "Enter the color";
+"AddCarVC.btnPay.text"                        = "Pay";
+
+
+
+
+//SelectCarVC
+"SelectCarVC.title"            = "Choose a car";
+"SelectCarVC.btnAddCar.title"  = "ADD NEW CAR";
+"SelectCarVC.btnProceed.title" = "PROCEED";
+"SelectCarVC.lblSubTitle.title" = "Choose The Problem";
+
+
+
+//PackagesVC
+"PackagesVC.title"                    = "Emergency Subscription";
+"PackagesVC.lblCarTitle.title"        = "Roadz Emergency Package for";
+"PackagesVC.lblSubscribeLength.title" = "Subscribe for one year\nwith unlimited Services";
+"PackagesVC.btnProceed.title"         = "SUBSCRIBE";
+
+
+
+
+//PaymentMethodVC
+"PaymentMethodVC.title"                              = "CHECKOUT";
+"PaymentMethodVC.lblOrderTitle.text"                 = "Order Summary";
+"PaymentMethodVC.lblCarModelTitle.text"              = "Car model";
+"PaymentMethodVC.lblEmergencySubscriptionTitle.text" = "Subscription Period";
+"PaymentMethodVC.lblEmergencySubscriptionValue.text" = "One Year";
+"PaymentMethodVC.lblSubscriptionDateTitle.text"      = "Start Date";
+"PaymentMethodVC.lblTotalPriceTitle.text"            = "Total Price";
+"PaymentMethodVC.lblPromoTitle.text"                 = "Have Promocode";
+"PaymentMethodVC.btnPromoTitle.text"                 = "APPLY";
+"PaymentMethodVC.btnPromoValueTitle.text"            = "Discount :";
+"PaymentMethodVC.lblTotalTitle.text"                 = "Total:";
+"PaymentMethodVC.btnPay.text"                        = "Pay";
+"PaymentMethodVC.lblSubscriptionEndDateTitle.text"   = "End Subscription";
+"PaymentMethodVC.lbl48HourseTitle.text"              = "your subscription will be active in 48 hrs from the date and time of your payment";
+"PaymentMethodVC.lblCarColor.text"              = "Your car color";
+
+
+//PaymentResultVC
+"PaymentResultVC.lblTitle.SUCCESS.text"          = "PAYMENT SUCCESS";
+"PaymentResultVC.lblTitle.DECLINE.text"          = "PAYMENT DECLINE";
+"PaymentResultVC.lblOrderDetails.text"           = "Order Details";
+"PaymentResultVC.lblOrderID.text"                = "Order ID";
+"PaymentResultVC.lblCarModel.text"               = "Car model";
+"PaymentResultVC.lblEmergencySubscription.text"  = "Subscription Period";
+"PaymentResultVC.lblSubscriptionDate.text"       = "Subscription Date";
+"PaymentResultVC.lblSubscriptionExpiryDate.text" = "Subscription Expiry Date";
+"PaymentResultVC.lblTotalPrice.text"             = "Total Price";
+"PaymentResultVC.btnDone.SUCCESS.text"           = "Done";
+"PaymentResultVC.btnDone.DECLINE.text"           = "Try again";
+
+
+
+
+
+//SelectServiceVC
+"SelectServiceVC.title" = "Select a Service";
+"SelectServiceVC.btnContinue.title" = "CONTINUE";
+
+
+
+
+
+//ServiceStatusVC
+"ServiceStatusVC.title"                         = "Service Status";
+"ServiceStatusVC.lblStatus.text.Successfully"   = "Request has been sent";
+"ServiceStatusVC.lblSubTitle.text.Successfully" = "We will contact you now for confirmation";
+"ServiceStatusVC.lblStatus.text.Failed"         = "Request Failed!\nTRY AGAIN";
+"ServiceStatusVC.lblSubStatus.text"             = "Dont worry,help is on the way...";
+"ServiceStatusVC.lblWeAreOnTheWay.text"         = "We are on the way";
+"ServiceStatusVC.lblWeWillCallYou.text"         = "You will receive a call now for a confirmation";
+"ServiceStatusVC.lblStatus.text.Demo"           =  "Easy ?";//"Done";
+"ServiceStatusVC.lblSubTitle.text.Demo"         =   "";
+
+
+//ChangePasswordVC
+"ChangePasswordVC.title"                   = "Change Password";
+"ChangePasswordVC.lblCurrentPassword.text" = "Current Password";
+"ChangePasswordVC.lblNewPassword.text"     = "New Password";
+"ChangePasswordVC.lblReNewPassword.text"   = "Confirm New Password";
+"ChangePasswordVC.btnChange.title"         = "Update";
+
+
+
+//BeforeLoginVC
+"BeforeLoginVC.btnGuest.text"  = "Guest";
+"BeforeLoginVC.btnLogin.text"  = "LOG IN";
+"BeforeLoginVC.btnSignup.text" = "SIGN UP";
+
+
+
+
+
+//MapVC
+"MapVC.btnSelect.text" = "CONFIRM LOCATION";
+
+
+
+//ServicesOverviewVC
+"ServicesOverviewVC.title"                = "Service overview";
+"ServicesOverviewVC.lblSubtitle.text"     = "Unlimited roadside assistant requests for one year";
+"ServicesOverviewVC.lblPrice.text"        = "KD 15 Annual";
+"ServicesOverviewVC.btnNext.text"         = "NEXT";
+"ServicesOverviewVC.lblCell.title.text.1" = "Battery Recharge";
+"ServicesOverviewVC.lblCell.value.text.1" = "Recharging your battery to startup the car";
+"ServicesOverviewVC.lblCell.title.text.2" = "Towing";
+"ServicesOverviewVC.lblCell.value.text.2" = "Transport your car at the required destination";
+"ServicesOverviewVC.lblCell.title.text.3" = "Refuel";
+"ServicesOverviewVC.lblCell.value.text.3" = "Fuel delivery (additional cost for the fuel only)";
+"ServicesOverviewVC.lblCell.title.text.4" = "Tire Puncture";
+"ServicesOverviewVC.lblCell.value.text.4" = "Tire replacement of your spare tire"; 
+"ServicesOverviewVC.lblCell.title.text.5" = "Open Locks";
+"ServicesOverviewVC.lblCell.value.text.5" = "Open the car incase of unavailability of the key";
+"Add" = "Add";
+
+
+
+
+///////
+/* No comment provided by engineer. */
+"%d days ago" = "%d days ago";
+
+/* No comment provided by engineer. */
+"%d hours ago" = "%d hours ago";
+
+/* No comment provided by engineer. */
+"%d minutes ago" = "%d minutes ago";
+
+/* No comment provided by engineer. */
+"%d months ago" = "%d months ago";
+
+/* No comment provided by engineer. */
+"%d seconds ago" = "%d seconds ago";
+
+/* No comment provided by engineer. */
+"%d weeks ago" = "%d weeks ago";
+
+/* No comment provided by engineer. */
+"%d years ago" = "%d years ago";
+
+/* No comment provided by engineer. */
+"A minute ago" = "A minute ago";
+
+/* No comment provided by engineer. */
+"An hour ago" = "An hour ago";
+
+/* No comment provided by engineer. */
+"Just now" = "Just now";
+
+/* No comment provided by engineer. */
+"Last month" = "Last month";
+
+/* No comment provided by engineer. */
+"Last week" = "Last week";
+
+/* No comment provided by engineer. */
+"Last year" = "Last year";
+
+/* No comment provided by engineer. */
+"Yesterday" = "Yesterday";
+
+/* No comment provided by engineer. */
+"1 year ago" = "1 year ago";
+
+/* No comment provided by engineer. */
+"1 month ago" = "1 month ago";
+
+/* No comment provided by engineer. */
+"1 week ago" = "1 week ago";
+
+/* No comment provided by engineer. */
+"1 day ago" = "1 day ago";
+
+/* No comment provided by engineer. */
+"1 hour ago" = "1 hour ago";
+
+/* No comment provided by engineer. */
+"1 minute ago" = "1 minute ago";
+
+/* No comment provided by engineer. */
+"1 second ago" = "1 second ago";
+
+/* No comment provided by engineer. */
+"This morning" = "This morning";
+
+/* No comment provided by engineer. */
+"This afternoon" = "This afternoon";
+
+/* No comment provided by engineer. */
+"Today" = "Today";
+
+/* No comment provided by engineer. */
+"This week" = "This week";
+
+/* No comment provided by engineer. */
+"This month" = "This month";
+
+/* No comment provided by engineer. */
+"This year" = "This year";
+
+/* Short format for */
+"%dy" = "%dy"; // year
+"%dM" = "%dM"; // month
+"%dw" = "%dw"; // week
+"%dd" = "%dd"; // day
+"%dh" = "%dh"; // hour
+"%dm" = "%dm"; // minute
+"%ds" = "%ds"; // second
+
+/* Week format for */
+"Mon" = "Mon";
+"Tue" = "Tue";
+"Wed" = "Wed";
+"Thu" = "Thu";
+"Fri" = "Fri";
+"Sat" = "Sat";
+"Sun" = "Sun";
+
+"周一" = "星期一";
+"周二" = "星期二";
+"周三" = "星期三";
+"周四" = "星期四";
+"周五" = "星期五";
+"周六" = "星期六";
+"周日" = "星期日";
+

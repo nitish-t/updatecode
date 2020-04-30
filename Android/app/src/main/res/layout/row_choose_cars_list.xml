@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.roadz.modules.Emergency.ChooseCarsListRow_ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginBottom="@dimen/d5"
+        android:background="@drawable/btn_car_bg"
+        android:gravity="start|center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d20"
+        android:paddingRight="@dimen/d20">
+
+        <LinearLayout
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+           >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="start|center"
+                android:paddingTop="@dimen/d10"
+                android:paddingBottom="@dimen/d10"
+                android:text="Hyundai Verna 2018"
+                android:textAlignment="viewStart"
+                android:textColor="#333132"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:id="@+id/callImage"
+                android:layout_width="@dimen/d24"
+                android:layout_height="@dimen/d24"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_car_call"
+                android:tint="#333132"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.app.roadz.modules.Emergency.ChooseCarsListRow_>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_and_statusbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/d5"
+        android:gravity="center"
+        android:layoutDirection="locale"
+        android:paddingLeft="@dimen/d16"
+        android:paddingRight="@dimen/d16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/toolbar_title">
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="@dimen/d30"
+                android:layout_height="@dimen/d30"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d10"
+                android:layout_marginEnd="@dimen/d10"
+                android:layout_marginBottom="@dimen/d10"
+                android:padding="3dp"
+                android:src="@drawable/ic_toolbar_back"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            android:paddingTop="@dimen/d10"
+            android:paddingBottom="@dimen/d10"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/previous_requests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end|center"
+            android:layout_toEndOf="@+id/toolbar_title"
+            android:ellipsize="end"
+            android:fontFamily="@font/hkgrotesk_bold"
+            android:gravity="end|center"
+            android:lines="1"
+            android:text="@string/pending_requests"
+            android:textAlignment="viewEnd"
+            android:textColor="#FF002B"
+            android:textSize="@dimen/d18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

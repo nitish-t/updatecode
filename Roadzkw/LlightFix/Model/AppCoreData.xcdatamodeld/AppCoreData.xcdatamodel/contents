@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="19A602" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="TAds" representedClassName="TAds" syncable="YES">
+        <attribute name="i_order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="order_number"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_image" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="image"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="TCar" representedClassName="TCar" syncable="YES">
+        <attribute name="b_open_request" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="has_open_request"/>
+            </userInfo>
+        </attribute>
+        <attribute name="i_car_maker_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_maker_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="i_car_model_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_model_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="i_car_year_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_year_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="i_customer_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="customer_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_color" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="color"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_plate_number" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="plate_number"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="carMaker" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TCarMaker" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_maker"/>
+            </userInfo>
+        </relationship>
+        <relationship name="carModel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TCarModel" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_model"/>
+            </userInfo>
+        </relationship>
+        <relationship name="carYear" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TCarYear" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_year"/>
+            </userInfo>
+        </relationship>
+        <relationship name="subscription" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TSubscription" syncable="YES"/>
+    </entity>
+    <entity name="TCarMaker" representedClassName="TCarMaker" syncable="YES">
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="title"/>
+            </userInfo>
+        </attribute>
+        <relationship name="models" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TCarModel" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_models"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="TCarModel" representedClassName="TCarModel" syncable="YES">
+        <attribute name="i_car_maker_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_maker_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="title"/>
+            </userInfo>
+        </attribute>
+        <relationship name="years" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="TCarYear" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_years"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="TCarYear" representedClassName="TCarYear" syncable="YES">
+        <attribute name="i_car_model_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_model_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="title"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="TCopon" representedClassName="TCopon" syncable="YES">
+        <attribute name="i_discount_percentage" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="discount_percentage"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_coupon" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="coupon"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_end_date" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="end_date"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_start_date" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="start_date"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="TNotification" representedClassName="TNotifications" syncable="YES">
+        <attribute name="b_read" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="is_read"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_body" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="body"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_dt_created" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="created_at"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="title"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="TPackage" representedClassName="TPackage" syncable="YES">
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_dt_created" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="created_at"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_price" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_type" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="type"/>
+            </userInfo>
+        </attribute>
+        <relationship name="services" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TService" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="services"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="TService" representedClassName="TService" syncable="YES">
+        <attribute name="i_package_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="package_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_image" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="title"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="TSetting" representedClassName="TSetting" syncable="YES">
+        <attribute name="i_skip_ads_timer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="skip_ads_timer"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_about_us" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="about_us"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_address" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="address"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_facebook" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="facebook"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_info_email" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="info_email"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_instagram" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="instagram"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_latitude" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="latitude"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_linkedin" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="linkedin"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_logo" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="logo"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_longitude" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="longitude"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_mobile" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="mobile"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_privacy" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="privacy"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_service_emergency" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="service_emergency"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_service_emergency_guest" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="service_emergency_guest"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_service_maintenance" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="service_maintenance"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_terms" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="terms"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="title"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_twitter" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="twitter"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_youtube_emergency" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="youtube_emergency"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_youtube_maintenance" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="youtube_maintenance"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="TSlider" representedClassName="TSlider" syncable="YES">
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_image" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="image"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <entity name="TSubscription" representedClassName="TSubscription" syncable="YES">
+        <attribute name="b_suspended" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="d_coupon_discount_percentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="coupon_discount_percentage"/>
+            </userInfo>
+        </attribute>
+        <attribute name="d_price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="i_car_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="i_customer_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="customer_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="i_package_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="package_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_coupon" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="coupon"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_dt_subscription_end" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="subscription_end"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_dt_subscription_start" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="subscription_start"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_final_total" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="final_total"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_ref_id" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="ref_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_status" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="status"/>
+            </userInfo>
+        </attribute>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TCar" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="car"/>
+            </userInfo>
+        </relationship>
+        <relationship name="package" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TPackage" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="package"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="TUser" representedClassName="TUser" syncable="YES">
+        <attribute name="b_email_verified" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pk_i_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_access_token" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="access_token"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_device_type" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="device_type"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_email" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="email"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_full_name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="full_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_image" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="profile_image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="s_mobile" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="fj" value="mobile"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <elements>
+        <element name="TAds" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="TCar" positionX="9" positionY="153" width="128" height="238"/>
+        <element name="TCarMaker" positionX="-18" positionY="162" width="128" height="90"/>
+        <element name="TCarModel" positionX="0" positionY="171" width="128" height="105"/>
+        <element name="TCarYear" positionX="18" positionY="180" width="128" height="90"/>
+        <element name="TCopon" positionX="0" positionY="144" width="128" height="120"/>
+        <element name="TNotification" positionX="-9" positionY="135" width="128" height="120"/>
+        <element name="TPackage" positionX="0" positionY="144" width="128" height="120"/>
+        <element name="TService" positionX="-9" positionY="135" width="128" height="105"/>
+        <element name="TSetting" positionX="-36" positionY="36" width="128" height="360"/>
+        <element name="TSlider" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="TSubscription" positionX="-9" positionY="135" width="128" height="268"/>
+        <element name="TUser" positionX="36" positionY="189" width="128" height="163"/>
+    </elements>
+</model>

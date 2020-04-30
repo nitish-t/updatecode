@@ -1,0 +1,78 @@
+<resources>
+
+
+    <string name="time_ago_seconds">أقل من دقيقة</string>
+    <string name="time_ago_minute">حوالي دقيقة</string>
+    <string name="time_ago_minutes">%d دقائق</string>
+    <string name="time_ago_hour">حول الساعة</string>
+    <string name="time_ago_hours">حول %d ساعات</string>
+    <string name="time_ago_day">يوم</string>
+    <string name="time_ago_days">%d ايام</string>
+    <string name="time_ago_month">حول شهر</string>
+    <string name="time_ago_months">%d أشهر</string>
+    <string name="time_ago_year">حول السنة</string>
+    <string name="time_ago_years">%d سنوات</string>
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">منذ</string>
+    <string name="seconds">ثانية</string>
+
+
+    <plurals name="time_ago_seconds">
+        <item quantity="zero">ثانية</item>
+        <item quantity="one">ثانية</item>
+        <item quantity="two">ثانيتين</item>
+        <item quantity="few">%d ثوان</item>
+        <item quantity="many">%d ثانية</item>
+        <item quantity="other">%d ثانية</item>
+    </plurals>
+    <plurals name="time_ago_minutes">
+        <item quantity="zero">دقيقة</item>
+        <item quantity="one">دقيقة</item>
+        <item quantity="two">دقيقتين</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+        <item quantity="other">%d دقيقة</item>
+    </plurals>
+    <plurals name="time_ago_hours">
+        <item quantity="zero">ساعة</item>
+        <item quantity="one">ساعة</item>
+        <item quantity="two">ساعتين</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعة</item>
+        <item quantity="other">%d ساعة</item>
+    </plurals>
+    <plurals name="time_ago_days">
+        <item quantity="zero">يوم</item>
+        <item quantity="one">يوم</item>
+        <item quantity="two">يومين</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d يوم</item>
+        <item quantity="other">%d يوم</item>
+    </plurals>
+
+    <plurals name="time_ago_week">
+        <item quantity="zero">أسبوع</item>
+        <item quantity="one">أسبوع</item>
+        <item quantity="two">أسبوعين</item>
+        <item quantity="few">%d أسبوع</item>
+        <item quantity="many">%d أسبوع</item>
+        <item quantity="other">%d أسبوع</item>
+    </plurals>
+    <plurals name="time_ago_month">
+        <item quantity="zero">شهر</item>
+        <item quantity="one">شهر</item>
+        <item quantity="two">شهرين</item>
+        <item quantity="few">%d أشهر</item>
+        <item quantity="many">%d أشهر</item>
+        <item quantity="other">%d أشهر</item>
+    </plurals>
+
+    <plurals name="time_ago_year">
+        <item quantity="zero">سنة</item>
+        <item quantity="one">سنة</item>
+        <item quantity="two">سنتين</item>
+        <item quantity="few">%d سنين</item>
+        <item quantity="many">%d سنين</item>
+        <item quantity="other">%d سنين</item>
+    </plurals>
+</resources>

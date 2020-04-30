@@ -1,0 +1,7 @@
+pass: lkmafsdfmlaksdmflaksdmfkd
+alias: admin 
+
+
+Gmail:
+light.fix.app@gmail.com
+lightfix2019

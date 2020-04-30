@@ -1,0 +1,457 @@
+/*************************  *************************/
+//
+//  Localizable.strings
+//  LlightFix
+//
+//  Created by  on 6/26/19.
+//  Copyright © 2019 LightFix iCode. All rights reserved.
+//
+
+//Font
+"Cairo-Regular"    = "Tajawal-Regular";
+"Cairo-Bold"       = "Tajawal-Bold";
+"Cairo-ExtraLight" = "Tajawal-Medium";
+
+"KD" = "د.ك";
+
+"ic_back" = "ic_back-1";
+"ic_menu" = "ic_menu-1";
+"bg_views" = "bg_views_";
+"ic_arrow" = "ic_arrow_1";
+
+//Common
+"Error"                                                                          = "خطأ";
+"Info"                                                                           = "معلومات";
+"Done"                                                                           = "تم";
+"OK"                                                                             = "موافق";
+"Cancel"                                                                         = "إلغاء";
+"Attention"                                                                      = "تنبيه";
+"loginRequiredAttention"                                                         = "يجب التسجيل";
+"An error occurred"                                                              = "حدث خطأ";
+"English"                                                                        = "English";
+"Arabic"                                                                         = "عربي";
+"No Data To Show"                                                                = "لا يوجد شيء لعرضه";
+"TitleChangeLanguage"                                                            = "هل تريد فعلاً تغيير اللغة ؟";
+"SubTitleChangeLanguage"                                                         = "سوف يتم إغلاق التطبيق";
+"HTMLDirection"                                                                  = "rtl";
+"Settings"                                                                       = "إعدادات";
+"Login"                                                                          = "تسجيل الدخول";
+"Login Permission"                                                               = "هذه الميزة فقط للمسجيلين في التطبيق \nهل تريد تسجيل الدخول";
+"This service will be available later"                                           = "هذه الخدمة ستتوفر لاحقاً";
+"Need To Permission"                                                             = "نحتاج لإعطاء صلاحيات للتطبيق";
+"The application is unable to give you valid data without getting your location" = "التطبيق غير قادر على إعطاءك بيانات صحيحة بدون إستخدام موقعك";
+"Do you want to take a photo or a selection from the Gallery!"                   = "هل تريد إلتقاط صورة أم اختيار من الألبوم";
+"TitleMessageEmail"                                                              = "عنوان الرسالة";
+"MessageBodyEmail"                                                               = "نص الرسالة";
+"Capture image"                                                                  = "إلتقاط صورة";
+"Chose From Gallery"                                                             = "اختيار من الألبوم";
+"IQDropDownTextField_optionalItemText"                                           = "بدون تحديد";
+"PleaseAcceptTheTerms"                                                           = "يرجى قبول الشروط";
+"DoneSuccessfully"                                                               = "تم إرسال تغيير كلمة المرور الى البريد الخاص بك";
+"TextFeildValidation"                                                            = "عذراً، حقل %@ مطلوب";
+"alreadyExisted"                                                                  = "%@";
+"InvalidEmail"                                                                   = "عذراً، البريد الإلكتروني غير صحيح";
+"InvalidPassword"                                                                = "خطأ في كلمة المرور";
+"MobileDigits"                                                                   = "عذراً، رقم الجوال لابد أن يكون %@ خانة";
+"Login"                                                                          = "نعم";
+"Logout"                                                                         = "تسجيل الخروج";
+"Signin"                                                                         = "تسجيل الدخول";
+"Signout"                                                                        = "تسجيل الخروج";
+"Register"                                                                       = "تسجيل";
+"Registration"                                                                   = "مستخدم جديد";
+"ForgeotPassword"                                                                = "نسيت كلمة المرور";
+"Search"                                                                         = "البحث";
+"Code"                                                                           = "كود التفعيل";
+"UserName"                                                                       = "اسم المستخدم";
+"FullName"                                                                       = "الاسم كاملاً";
+"Name"                                                                           = "الاسم";
+"Email"                                                                          = "البريد الإلكتروني";
+"Password"                                                                       = "كلمة المرور";
+"OldPassword"                                                                    = "كلمة المرور القديمة";
+"NewPassword"                                                                    = "كلمة المرور الجديدة";
+"MobileNumber"                                                                   = "رقم الجوال";
+"CurrentLocation"                                                                = "الموقع الحالي";
+"Address"                                                                        = "العنوان";
+"Country"                                                                        = "الدولة";
+"City"                                                                           = "المدينة";
+"Message"                                                                        = "الرسالة";
+"BirthDay"                                                                       = "تاريخ الميلاد";
+"Male"                                                                           = "ذكر";
+"Female"                                                                         = "أنثى";
+"AboutUS"                                                                        = "من نحن";
+"ContactUS"                                                                      = "إتصل بنا";
+"SearchHere"                                                                     = "إبحث هنا ,,,";
+"SuccessSendRequest"                                                             = "شكرا على تواصلك ، سنقوم بالرد في أقرب وقت ممكن";
+"FileSize"                                                                       = "الملف المختار يحب أن يقل حجمه عن 10 ميجا";
+"LoginIsRequired"                                                                = "يرجى التسجيل للدخول على هذه الخاصية, هل تريد التسجيل؟";
+"logInSuccess"                                                                   = "تم تسجيل الدخول بنجاح.";
+"logOutSuccess"                                                                  = "تم تسجيل الخروج بنحاح";
+"UpdateProfileSuccess"                                                           = "تم تحديث الملف الشخصي بنجاح.";
+"RegisterSuccess"                                                                = "تمت عملية التسجيل نجاح";
+"ResetPasswordSuccess"                                                           = "تم إستعادة كلمة المرور بنجاح.";
+"ResetCodeToResetPasswordSuccess"                                                = "تم إرسال رمز إعادة تعيين كلمة المرور بنجاح.";
+"SuccessfullyAddedToFavorites"                                                   = "تمت الإضافة بنجاح إلى المفضلة";
+"SuccessfullyRemovedToFavorites"                                                 = "تمت الإزالة بنجاح من المفضلة";
+"DoYouWantToLogout"                                                              = "هل تريد تسجيل الخروج؟";
+"SelectCarToContinue"                                                            = "يرجى اختيار السيارة";
+"CallUS"                                                                         = "اتصل بنا";
+"Renew"                                                                          = "تجديد";
+"AreYouSureSelectThisLocation"                                                   = "هل انت متأكد من اختيار هذا المكان؟";
+"messege_application_will_exit"                                                  = "سيتم إغلاق التطبيق الأن .. يرجى فتحه مرة اخرى ليتم تطبيق اللغة";
+"SelectServiceToContinue"                                                        = "يرجى تحديد المشكلة";
+"Demo"                                                                           = "تجريبي";
+"YouNeedToSelectLocationFirst"                                                   = "يجب اختيار مكان صحيح";
+"requestSignup"                                                                  = "نعم ، اشترك";
+//Home
+"HomeVC.lblEmergency.title"   = "  المساعدة على الطريق  ";
+"HomeVC.lblMaintenance.title" = "تصليح";
+"HomeVC.lblComingSoon.title"  = "قريبا !";
+"HomeVC.btnOrder.title"       = "طلب المساعدة";
+"HomeVC.btnOrder.title.Demo"  = "طلب تجريبي";
+"emailPlaceholder"            = "أدخل بريدك الإلكتروني";
+
+//AdsVC
+"AdsVC_btnNext_Title"      = "التالي";
+"AdsVC_btnBack_Title"      = "السابق";
+"AdsVC_btnNext_Title_Done" = "تخطي";
+
+
+//TutorialVC
+"TutorialVC.lblTitle.text" = "دليل المستخدم";
+"TutorialVC.btnStart.text" = "ابدأ";
+
+
+
+//LoginVC
+"LoginVC.lblEmail.text"           = "أدخل بريدك الإلكتروني";
+"LoginVC.lblPassword.text"        = "كلمة المرور";
+"LoginVC.btnForgetPassword.text"  = "نسيت كلمة المرور؟";
+"LoginVC.btnGest.text"            = "المتابعة كضيف";
+"LoginVC.btnLogin.text"           = "دخول";
+"LoginVC.lblOrTitle.text"         = "أو";
+"LoginVC.lblDontHaveAccount.text" = "لا تملك حساب Roadz ؟";
+"LoginVC.btnSignUP.text"          = "ليس لديك حساب؟ سجل الآن";
+
+
+
+//ForgetPasswordVC
+"ForgetPasswordVC.lblTitle.text"          = "أدخل بريدك الإلكتروني للحصول على كلمة مرور جديد";
+"ForgetPasswordVC.lblEmail.text"          = "البريد الإلكتروني";
+"ForgetPasswordVC.btnForgetPassword.text" = "إعادة تعيين كلمة المرور";
+"ForgetPasswordVC.lblOrTitle.text"        = "أو";
+"ForgetPasswordVC.btnLogin.text"          = "دخول";
+
+
+//RegistrationVC
+"RegistrationVC.lblTitle1.text"          = "المعلومات الشخصية";
+"RegistrationVC.lblTitle2.text"          = "معلومات السيارة";
+"RegistrationVC.lblFullName.text"        = "الاسم";
+"RegistrationVC.lblEmail.text"           = "أدخل بريدك الإلكتروني";
+"RegistrationVC.lblPassword.text"        = "كلمة المرور";
+"RegistrationVC.lblConfirmPassword.text" = "تأكيد كلمة المرور";
+"RegistrationVC.lblMobile.text"          = "رقم الهاتف";
+"RegistrationVC.lblNext.text"            = "التالي";
+"RegistrationVC.lblRegister.text"        = "إرسال";
+"RegistrationVC.lblCarMaker.text"        = "نوع السيارة";
+"RegistrationVC.lblCarModel.text"        = "موديل السيارة";
+//"RegistrationVC.lblCarYear.text"       = "سنة صنع السيارة";
+"RegistrationVC.lblCarYear.text"         = "اختر السنة";
+
+"RegistrationVC.lblCarPlateNumber.text"  = "رقم لوحة السيارة";
+"RegistrationVC.lblCarColor.text"        = "لون السيارة";
+"RegistrationVC.presentPickerView.title" = "اختر من القائمة";
+"RegistrationVC.lblTemsTitle.text"       = "اوافق على";
+"RegistrationVC.lblTemsValue.text"       = "الشروط والأحكام";
+"RegistrationVC.fullName.placeholder"    = "الاسم";
+"RegistrationVC.email.placeholder"       = "أدخل بريدك الإلكتروني";
+"RegistrationVC.mobile.placeholder"       = "هاتفك النقال لا";
+
+
+
+
+//MenuVC
+"MenuVC.lblPowered.text"               = "من خلال line";
+"SideMenuVC.CellType.home"             = "الرئيسية";
+"SideMenuVC.CellType.profile"          = "الملف الشخصي";
+"SideMenuVC.CellType.login"            = "تسجيل الدخول";
+"SideMenuVC.CellType.my_cars"          = "سياراتي";
+"SideMenuVC.CellType.my_subscriptions" = "اشتراكاتي";
+"SideMenuVC.CellType.our_services"     = "خدماتنا";
+"SideMenuVC.CellType.about_us"         = "من نحن";
+"SideMenuVC.CellType.contact_us"       = "اتصل بنا";
+"SideMenuVC.CellType.settings"         = "الإعدادات";
+"SideMenuVC.CellType.logout"           = "تسجيل الخروج";
+"SideMenuVC.CellType.privacy"          = "سياسة الخصوصية";
+
+
+
+//OurServicesVC
+"OurServicesVC.title"               = "خدماتنا";
+"OurServicesVC.btnMaintenance.text" = "تصليح";
+"OurServicesVC.btnEmergency.text"   = "طوارئ";
+"OurServicesVC.btnSubscribe.text"   = "اشتراك";
+
+
+
+//NotificationsListVC
+"NotificationsListVC.title"            = "التنبيهات";
+"NotificationsListVC.emptyTitle"       = "لا يوجد شيء هنا!!";
+"NotificationsListVC.emptyDescription" = "لا يوجد لديك اي تنبيهات\nمن Roadz";
+
+
+
+//ProfileVC
+"ProfileVC.title"                          = "الملف الشخصي";
+"ProfileVC.btnChange.text"                 = "تحديث";
+"ProfileVC.btnChangePassword.text"         = "تغيير كلمة المرور";
+"ProfileVC.lblEmailStatus.text_active"     = "مفعل";
+"ProfileVC.lblEmailStatus.text_not_active" = "غير مفعل";
+"ProfileVC.btnResendEmail.text"            = "اعادة ارسال كود التفعيل";
+
+
+
+//ContactUSVC
+"ContactUSVC.title"                       = "اتصل بنا";
+"ContactUSVC.lblTitle.text"               = "اترك لنا رسالة";
+"ContactUSVC.lblName.text"                = "الإسم";
+"ContactUSVC.textName.placeholder"        = "ادخل اسمك";
+"ContactUSVC.lblEmail.text"               = "البريد الإلكتروني";
+"ContactUSVC.textEmail.placeholder"       = "ادخل بريدك الإلكتروني";
+"ContactUSVC.lblPhoneNumber.text"         = "رقم الجوال";
+"ContactUSVC.textPhoneNumber.placeholder" = "ادخل رقم جوالك";
+"ContactUSVC.lblMessage.text"             = "الرسالة";
+"ContactUSVC.textMessage.placeholder"     = "ادخل رسالتك";
+"ContactUSVC.btnSubmit.text"              = "إرسال";
+"ContactUSVC.lblInfo.text"                = "معلومات:";
+"ContactUSVC.lblPhoneNumnerInfo.text"     = "رقم الجوال:";
+"ContactUSVC.lblEmailInfo.text"           = "البريد الإلكتروني:";
+
+
+
+//SettingsVC
+"SettingsVC.title"                   = "الإعدادات";
+"SettingsVC.lblLang.text"            = "اللغة";
+"SettingsVC.btnEN.text"              = "انجليزي";
+"SettingsVC.btnAR.text"              = "عربي";
+"SettingsVC.lblNotification.text"    = "التنبيهات";
+"SettingsVC.btnNotificationOn.text"  = "مفعل";
+"SettingsVC.btnNotificationOFF.text" = "غير مفعل";
+"SettingsVC.lblTerms.text"           = "الشروط والأحكام";
+"SettingsVC.lblPrivacyPolicy.text"   = "سياسة الخصوصية";
+
+
+
+//MySubscriptionsVC
+"MySubscriptionsVC.title"                     = "اشتراكاتي";
+"MySubscriptionsTableViewCell.OrderID.text"   = "رقم الطلب :";
+"MySubscriptionsTableViewCell.CarModel.text"  = "موديل السيارة :";
+"MySubscriptionsTableViewCell.StartDate.text" = "بداية الإشتراك :";
+"MySubscriptionsTableViewCell.EndDate.text"   = "نهاية الإشتراك :";
+"MySubscriptionsTableViewCell.Amount.text"    = "المبلغ :";
+
+
+//MyCarsVC
+"MyCarsVC.title"                                 = "سياراتي";
+//"MyCarsTableViewCell.lblSubscriptionNumber.text" = "المرجع. هوية شخصية";
+"MyCarsTableViewCell.lblSubscriptionNumber.text" = "الرقم المرجعي";
+"MyCarsTableViewCell.lblPlateNumber.text"        = "رقم اللوحة";
+"MyCarsTableViewCell.lblCarColor.text"           = "لون السيارة";
+"MyCarsTableViewCell.btnDelete.text"             = "حذف";
+"MyCarsTableViewCell.btnDelete.alert.msg"        = "هل انت متاكد من حذف السيارة ؟";
+"MyCarsVC.btnAddCar.text"                        = "إضافة سيارة جديدة";
+"MyCarsVC.lblNoSubscription.text"                = "لا يوجد اشتراك";
+"MyCarsVC.lblStatus.text"                        = "غير مفعل";
+"MyCarsVC.lblStatus.notPaid"                     = "غير مشترك";
+"MyCarsVC.lblStatus.active"                      = "مفعل";
+
+//AddCarVC
+"AddCarVC.title" = "أضف سيارة";
+"AddCarVC.btnAddCar.text" = "أرسل";
+"AddCarVC.txtCarColor.placeholder" = "لون السيارة";
+"AddCarVC.btnPay.text"          = "ادفع";
+
+
+//SelectCarVC
+"SelectCarVC.title"             = "إختر السيارة";
+"SelectCarVC.btnAddCar.title"   = "أضف سيارة";
+"SelectCarVC.btnProceed.title"  = "طلب المساعدة";
+"SelectCarVC.lblSubTitle.title" = "حدد المشكلة";
+
+
+
+//PackagesVC
+"PackagesVC.title"                    = "خدمة الطوارئ";
+"PackagesVC.lblCarTitle.title"        = "Roadz خدمة الطوارئ ل";
+"PackagesVC.lblSubscribeLength.title" = "اشترك لمدة سنة\nمع خدمة غير محدودة";
+"PackagesVC.btnProceed.title"         = "اشتراك";
+
+
+
+
+//PaymentMethodVC
+"PaymentMethodVC.title"                              = "الدفع";
+"PaymentMethodVC.lblOrderTitle.text"                 = "ملخص الطلب";
+"PaymentMethodVC.lblCarModelTitle.text"              = "موديل السيارة";
+"PaymentMethodVC.lblEmergencySubscriptionTitle.text" = "مدة الإشتراك";
+"PaymentMethodVC.lblEmergencySubscriptionValue.text" = "سنة واحدة";
+"PaymentMethodVC.lblSubscriptionDateTitle.text"      = "بداية الإشتراك";
+"PaymentMethodVC.lblTotalPriceTitle.text"            = "إجمالي الفاتورة";
+"PaymentMethodVC.lblPromoTitle.text"                 = "كود الخصم";
+"PaymentMethodVC.btnPromoTitle.text"                 = "تطبيق";
+"PaymentMethodVC.btnPromoValueTitle.text"            = "خصم :";
+"PaymentMethodVC.lblTotalTitle.text"                 = "المجموع :";
+"PaymentMethodVC.btnPay.text"                        = "ادفع";
+"PaymentMethodVC.lblSubscriptionEndDateTitle.text"   = "نهاية الإشتراك";
+"PaymentMethodVC.lbl48HourseTitle.text"              = "سوف يتم تفعيل الاشتراك بعد 48 ساعة من وقت الدفع";
+"PaymentMethodVC.lblCarColor.text"              = "لون السيارة";
+
+
+
+
+//PaymentResultVC
+"PaymentResultVC.lblTitle.SUCCESS.text"          = "تم الدفع بنجاح";
+"PaymentResultVC.lblTitle.DECLINE.text"          = "فشل عملية الدفع";
+"PaymentResultVC.lblOrderDetails.text"           = "بيانات الطلب";
+"PaymentResultVC.lblOrderID.text"                = "رقم الطلب";
+"PaymentResultVC.lblCarModel.text"               = "موديل السيارة";
+"PaymentResultVC.lblEmergencySubscription.text"  = "مدة الإشتراك";
+"PaymentResultVC.lblSubscriptionDate.text"       = "بداية الإشتراك";
+"PaymentResultVC.lblSubscriptionExpiryDate.text" = "نهاية الإشتراك";
+"PaymentResultVC.lblTotalPrice.text"             = "إجمالي الفاتورة";
+"PaymentResultVC.btnDone.SUCCESS.text"           = "تم";
+"PaymentResultVC.btnDone.DECLINE.text"           = "إعادة المحاولة";
+
+
+
+
+//SelectServiceVC
+"SelectServiceVC.title" = "اختر خدمة";
+"SelectServiceVC.btnContinue.title" = "متابعة";
+
+
+//ServiceStatusVC
+"ServiceStatusVC.title"                         = "حالة الخدمة";
+"ServiceStatusVC.lblStatus.text.Successfully"   = "تم إرسال طلب المساعدة";
+"ServiceStatusVC.lblSubTitle.text.Successfully" = "سيتم التواصل معك لإعلامك بكل جديد";
+"ServiceStatusVC.lblStatus.text.Failed"         = "حدث خطأ!\nالرجاء إعادة المحاولة";
+"ServiceStatusVC.lblSubStatus.text"             = "لا تقلق،المساعدة في الطريق...";
+"ServiceStatusVC.lblWeAreOnTheWay.text"         = "نحن في الطريق إليك";
+"ServiceStatusVC.lblWeWillCallYou.text"         = "سوف يتم التواصل معك الآن للتأكيد";
+"ServiceStatusVC.lblStatus.text.Demo"           = "سهل؟";
+"ServiceStatusVC.lblSubTitle.text.Demo"         = "";
+
+//ChangePasswordVC
+"ChangePasswordVC.title"                   = "تغيير كلمة المرور";
+"ChangePasswordVC.lblCurrentPassword.text" = "كلمة المرور الحالية";
+"ChangePasswordVC.lblNewPassword.text"     = "كلمة المرور الجديدة";
+"ChangePasswordVC.lblReNewPassword.text"   = "تأكيد كلمة المرور";
+"ChangePasswordVC.btnChange.title"         = "تحديث";
+
+
+
+
+//BeforeLoginVC
+"BeforeLoginVC.btnGuest.text"  = "تجربة البرنامج";
+"BeforeLoginVC.btnLogin.text"  = "تسجيل الدخول";
+"BeforeLoginVC.btnSignup.text" = "تسجيل جديد";
+
+
+
+
+//MapVC
+"MapVC.btnSelect.text" = "تأكيد المكان";
+
+
+
+
+//ServicesOverviewVC
+"ServicesOverviewVC.title"                = "خدماتنا";
+"ServicesOverviewVC.lblSubtitle.text"     = "خدمات الطريق على مدار السنة باستخدام لا محدود";
+"ServicesOverviewVC.lblPrice.text"        = "15 د.ك سنوي";
+"ServicesOverviewVC.btnNext.text"         = "التالي";
+"ServicesOverviewVC.lblCell.title.text.1" = "إعادة شحن البطارية";
+"ServicesOverviewVC.lblCell.value.text.1" = "إعادة شحن البطارية";
+"ServicesOverviewVC.lblCell.title.text.2" = "ونش";
+"ServicesOverviewVC.lblCell.value.text.2" = "نقل سيارتك للوجهة المطلوبة";
+"ServicesOverviewVC.lblCell.title.text.3" = "توصيل الوقود";
+"ServicesOverviewVC.lblCell.value.text.3" = "توصيل الوقود (تكلفة إضافية لسعر الوقود)";
+"ServicesOverviewVC.lblCell.title.text.4" = "خدمة الاطار";
+"ServicesOverviewVC.lblCell.value.text.4" = "استبدال الإطار الاحتياطي";
+"ServicesOverviewVC.lblCell.title.text.5" = "فتح السيارة";
+"ServicesOverviewVC.lblCell.value.text.5" = "فتح السيارة في حال عدم توفر المفتاح";
+
+"Add" = "إضافة";
+
+///////////
+/* No comment provided by engineer. */
+"%d days ago" = "منذ %d أيام";
+
+/* No comment provided by engineer. */
+"%d hours ago" = "منذ %d ساعات";
+
+/* No comment provided by engineer. */
+"%d minutes ago" = "منذ %d دقائق";
+
+/* No comment provided by engineer. */
+"%d months ago" = "منذ %d أشهر";
+
+/* No comment provided by engineer. */
+"%d seconds ago" = "منذ %d ثوانٍ";
+
+/* No comment provided by engineer. */
+"%d weeks ago" = "منذ %d أسابيع";
+
+/* No comment provided by engineer. */
+"%d years ago" = "منذ %d سنوات";
+
+/* No comment provided by engineer. */
+"A minute ago" = "منذ دقيقة";
+
+/* No comment provided by engineer. */
+"An hour ago" = "منذ ساعة";
+
+/* No comment provided by engineer. */
+"Just now" = "حالًا";
+
+/* No comment provided by engineer. */
+"Last month" = "الشهر الماضي";
+
+/* No comment provided by engineer. */
+"Last week" = "الأسبوع الماضي";
+
+/* No comment provided by engineer. */
+"Last year" = "العام الماضي";
+
+/* No comment provided by engineer. */
+"Yesterday" = "أمس";
+
+/* No comment provided by engineer. */
+"1 year ago" = "منذ عام";
+
+/* No comment provided by engineer. */
+"1 month ago" = "منذ شهر";
+
+/* No comment provided by engineer. */
+"1 week ago" = "منذ أسبوع";
+
+/* No comment provided by engineer. */
+"1 day ago" = "منذ يوم";
+
+/* No comment provided by engineer. */
+"This morning" = "هذا الصباح";
+
+/* No comment provided by engineer. */
+"This afternoon" = "بعد ظهيرة اليوم";
+
+/* No comment provided by engineer. */
+"Today" = "اليوم";
+
+/* No comment provided by engineer. */
+"This week" = "هذا الأسبوع";
+
+/* No comment provided by engineer. */
+"This month" = "هذا الشهر";
+
+/* No comment provided by engineer. */
+"This year" = "هذا العام";
+

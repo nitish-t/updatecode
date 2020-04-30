@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_inner" />
+
+
+    <LinearLayout
+        android:id="@+id/payment_sucsses_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d20"
+                android:layout_marginTop="@dimen/d10"
+                android:layout_marginEnd="@dimen/d20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:gravity="center"
+                    android:weightSum="1.9">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_payment_sucsses" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginRight="@dimen/d20"
+                    android:fontFamily="@font/hkgrotesk_regular"
+                    android:gravity="center"
+                    android:text="@string/request_has_been_sent"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/txt_we_are_on_the_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d20"
+                    android:layout_marginRight="@dimen/d20"
+                    android:layout_marginBottom="@dimen/d30"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="center"
+                    android:text="@string/we_are_on_the_way"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/d40"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="center"
+                        android:text="@string/you_will_receive_a_call_now_for_a_confirmation"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp26"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/d60"
+                        android:layout_height="@dimen/d60"
+                        android:src="@drawable/ic_headset" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payment_fail_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d20"
+                android:layout_marginTop="@dimen/d10"
+                android:layout_marginEnd="@dimen/d20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:gravity="center"
+                    android:weightSum="1.9">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_payment_fail" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/msg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d20"
+                    android:layout_marginRight="@dimen/d20"
+                    android:layout_marginBottom="@dimen/d30"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="center"
+                    android:text="@string/request_failed"
+                    android:textColor="#FF002B"
+                    android:textSize="@dimen/sp22" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/actionHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginBottom="@dimen/d30"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/hkgrotesk_bold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:minHeight="@dimen/d44"
+        android:paddingLeft="@dimen/d50"
+        android:paddingRight="@dimen/d50"
+        android:text="@string/menu_home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+
+</LinearLayout>

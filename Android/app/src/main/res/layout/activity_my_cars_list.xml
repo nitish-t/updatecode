@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_inner" />
+
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/d20"
+        app:layout_empty="@layout/empty_view"
+        app:layout_moreProgress="@layout/progressbar_item"
+        app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+        app:recyclerClipToPadding="false"
+        app:recyclerPadding="0dp"
+        app:scrollbarStyle="insideInset" />
+
+    <TextView
+        android:id="@+id/actionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginTop="@dimen/d20"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginBottom="@dimen/d30"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/hkgrotesk_bold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:minHeight="@dimen/d44"
+        android:text="@string/add_car"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+</LinearLayout>

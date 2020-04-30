@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyViewPager">
+        <attr name="swipeable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyTextState">
+        <attr name="state_empty_text" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AutoCompleteLocation">
+        <attr name="background_layout"
+            format="integer"/>
+        <attr name="hint_text"
+            format="string"/>
+        <attr name="hint_text_color"
+            format="color"/>
+        <attr name="text_color"
+            format="color"/>
+    </declare-styleable>
+</resources>

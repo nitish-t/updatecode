@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_inner" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d20"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginEnd="@dimen/d20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/d20"
+                android:gravity="center"
+                android:weightSum="2.3">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_payment_sucsses" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginBottom="@dimen/d14"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="start|center"
+                android:text="@string/order_details"
+                android:textColor="#333132"
+                android:textSize="@dimen/sp22" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="@string/order_id_q"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/order_id_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginTop="@dimen/d5"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="LT123456"
+                    android:textAlignment="viewStart"
+                    android:textColor="#848384"
+                    android:textSize="@dimen/sp17" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="#848384" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="@string/car_model"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/car_model_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginTop="@dimen/d5"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="Toyota Camry 2018"
+                    android:textAlignment="viewStart"
+                    android:textColor="#848384"
+                    android:textSize="@dimen/sp17" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="#848384" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="@string/subscription_period"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/emergency_subscription_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginTop="@dimen/d5"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="One year"
+                    android:textAlignment="viewStart"
+                    android:textColor="#848384"
+                    android:textSize="@dimen/sp17" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="#848384" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="@string/start_date_checkout"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/subscription_date_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginTop="@dimen/d5"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="20 / 01 / 2018"
+                    android:textAlignment="viewStart"
+                    android:textColor="#848384"
+                    android:textSize="@dimen/sp17" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="#848384" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="@string/end_date_checkout"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/subscription_expiry_date_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginTop="@dimen/d5"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="22 / 01 / 2019"
+                    android:textAlignment="viewStart"
+                    android:textColor="#848384"
+                    android:textSize="@dimen/sp17" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="#848384" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="@string/total_price"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/total_price_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginTop="@dimen/d5"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:text="KWD 10.000"
+                    android:textAlignment="viewStart"
+                    android:textColor="#848384"
+                    android:textSize="@dimen/sp17" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/actionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginBottom="@dimen/d30"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:minHeight="@dimen/d44"
+                android:paddingLeft="@dimen/d50"
+                android:paddingRight="@dimen/d50"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

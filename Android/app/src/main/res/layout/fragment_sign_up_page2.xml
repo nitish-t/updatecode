@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center"
+        android:gravity="top|center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/d10">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d40"
+                    android:layout_marginTop="@dimen/d30"
+                    android:layout_marginEnd="@dimen/d40"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/carMakerLayout"
+                                android:paddingEnd="@dimen/d20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtCarMaker"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:fontFamily="@font/hkgrotesk_bold"
+                                    android:gravity="start|center"
+                                    android:text="@string/car_maker"
+                                    android:textColor="#333132"
+                                    android:textSize="@dimen/sp17" />
+
+                                <TextView
+                                    android:id="@+id/txtCarMakerRedMark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginStart="2dp"
+                                    android:fontFamily="@font/hkgrotesk_bold"
+                                    android:gravity="start|center"
+                                    android:text="*"
+                                    android:textColor="#E50027"
+                                    android:textSize="@dimen/sp20"
+                                    android:textStyle="bold"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/d10"
+                                android:layout_height="@dimen/d10"
+                                android:layout_gravity="end|center"
+                                android:layout_marginEnd="@dimen/d10"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_spinner_indicator" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d5"
+                            android:layout_marginBottom="@dimen/d16"
+                            android:background="#848384" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/carModelLayout"
+                                android:paddingEnd="@dimen/d20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtCarModel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:fontFamily="@font/hkgrotesk_bold"
+                                    android:gravity="start|center"
+                                    android:text="@string/car_model"
+                                    android:textColor="#848384"
+                                    android:textSize="@dimen/sp17" />
+
+                                <TextView
+                                    android:id="@+id/txtCarModelRedMark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginStart="2dp"
+                                    android:fontFamily="@font/hkgrotesk_bold"
+                                    android:gravity="start|center"
+                                    android:text="*"
+                                    android:textColor="#E50027"
+                                    android:textSize="@dimen/sp20"
+                                    android:textStyle="bold"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/d10"
+                                android:layout_height="@dimen/d10"
+                                android:layout_gravity="end|center"
+                                android:layout_marginEnd="@dimen/d10"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_spinner_indicator" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d5"
+                            android:layout_marginBottom="@dimen/d16"
+                            android:background="#848384" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/paymentMethodLayoutSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/carYearLayout"
+                                android:paddingEnd="@dimen/d20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtCarYear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:fontFamily="@font/hkgrotesk_bold"
+                                    android:gravity="start|center"
+                                    android:text="@string/select_year"
+                                    android:textColor="#848384"
+                                    android:textSize="@dimen/sp17" />
+
+                                <TextView
+                                    android:id="@+id/txtCarYearRedMark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginStart="2dp"
+                                    android:fontFamily="@font/hkgrotesk_bold"
+                                    android:gravity="start|center"
+                                    android:text="*"
+                                    android:textColor="#E50027"
+                                    android:textSize="@dimen/sp20"
+                                    android:textStyle="bold"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/d10"
+                                android:layout_height="@dimen/d10"
+                                android:layout_gravity="end|center"
+                                android:layout_marginEnd="@dimen/d10"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_spinner_indicator" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d5"
+                            android:layout_marginBottom="@dimen/d16"
+                            android:background="#848384" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtCarPlateNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:text="@string/car_plate_number"
+                                android:textColor="#333132"
+                                android:textSize="@dimen/sp17" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:layout_marginStart="2dp"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:text="*"
+                                android:textColor="#E50027"
+                                android:textSize="@dimen/sp20"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/edtCarPlateNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:layout_marginTop="@dimen/d5"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/hkgrotesk_regular"
+                            android:gravity="start|center"
+                            android:hint="xx -  xxxxx"
+                            android:inputType="text"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="#848384"
+                            android:textColorHint="#99848384"
+                            android:textSize="@dimen/sp14" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d5"
+                            android:layout_marginBottom="@dimen/d10"
+                            android:background="#848384" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtCarColor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:text="@string/car_color"
+                                android:textColor="#333132"
+                                android:textSize="@dimen/sp17" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:layout_marginStart="2dp"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:text="*"
+                                android:textColor="#E50027"
+                                android:textSize="@dimen/sp20"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/edtCarColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:layout_marginTop="@dimen/d5"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/hkgrotesk_regular"
+                            android:gravity="start|center"
+                            android:hint="@string/enter_the_color"
+                            android:inputType="text"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="#848384"
+                            android:textColorHint="#99848384"
+                            android:textSize="@dimen/sp14" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d5"
+                            android:layout_marginBottom="@dimen/d10"
+                            android:background="#848384" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginBottom="@dimen/d10"
+                        android:buttonTint="#333132"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/agree_terms_conditions"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold"
+                        android:theme="@style/CheckBox" />
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/submitBtn"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="@dimen/d20"-->
+                        <!--android:layout_marginBottom="@dimen/d20"-->
+                        <!--android:background="@drawable/btn_bg"-->
+                        <!--android:foreground="?android:attr/selectableItemBackground"-->
+                        <!--android:gravity="center"-->
+                        <!--android:minHeight="@dimen/d40">-->
+
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/submitTxt"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:fontFamily="@font/hkgrotesk_bold"-->
+                            <!--android:gravity="center"-->
+                            <!--android:lines="1"-->
+                            <!--android:text="@string/submit"-->
+                            <!--android:textColor="#FFFFFF"-->
+                            <!--android:textSize="@dimen/sp18"-->
+                            <!--android:textStyle="bold" />-->
+                    <!--</LinearLayout>-->
+
+                    <FrameLayout
+                        android:id="@+id/submitBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/d20"
+                        android:layout_marginBottom="@dimen/d20"
+                        android:background="@drawable/btn_bg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:minHeight="@dimen/d40">
+
+
+                        <TextView
+                            android:id="@+id/submitTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/hkgrotesk_bold"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:text="@string/next"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/submiticon"
+                            android:layout_width="@dimen/d24"
+                            android:layout_height="@dimen/d24"
+                            android:layout_gravity="end|center"
+                            android:layout_marginStart="@dimen/d14"
+                            android:layout_marginEnd="@dimen/d20"
+                            android:src="@drawable/ic_next_arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

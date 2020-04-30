@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.roadz.modules.Notification.NotificationPopup_ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1.2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/d12"
+        app:cardElevation="@dimen/d4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#76C2CE"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/d14"
+                android:paddingTop="@dimen/d14"
+                android:paddingRight="@dimen/d14"
+                android:paddingBottom="@dimen/d14"
+                android:text="@string/notifications"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+
+            <LinearLayout
+                android:id="@+id/contenerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d6"
+                android:paddingTop="@dimen/d14"
+                android:paddingRight="@dimen/d6"
+                android:paddingBottom="@dimen/d14">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:gravity="top|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/notificationTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="New Request. "
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/notificationDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="end|center"
+                        android:text="10m ago"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".3dp"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:background="#707070" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d150">
+                    <TextView
+                        android:id="@+id/notificationBody"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_regular"
+                        android:gravity="start|top"
+                        android:text="Your Roadside Assistant - Tire - has been requested. "
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp14" />
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</com.app.roadz.modules.Notification.NotificationPopup_>

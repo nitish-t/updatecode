@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d20"
+        android:layout_marginBottom="@dimen/d20"
+        android:fontFamily="@font/hkgrotesk_bold"
+        android:gravity="center"
+        android:paddingStart="@dimen/d20"
+        android:paddingEnd="@dimen/d20"
+        android:text="@string/user_guide"
+        android:textColor="#333132"
+        android:textSize="@dimen/sp18" />
+
+    <com.app.roadz.Utils.RtlViewPager.RtlViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:layoutDirection="locale"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/d30"
+        android:paddingEnd="@dimen/d30"
+        android:paddingBottom="@dimen/d30" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="@dimen/d10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/pageIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layoutDirection="locale"
+                    app:piv_animationType="scale"
+                    app:piv_interactiveAnimation="true"
+                    app:piv_padding="2dp"
+                    app:piv_radius="6dp"
+                    app:piv_rtl_mode="auto"
+                    app:piv_selectedColor="#333132"
+                    app:piv_unselectedColor="#333132" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/getStartedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/d30"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/hkgrotesk_bold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:lines="1"
+            android:minHeight="@dimen/d40"
+            android:paddingStart="@dimen/d40"
+            android:paddingEnd="@dimen/d40"
+            android:text="@string/get_started"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp18"
+            app:autoSizeMaxTextSize="@dimen/sp18"
+            app:autoSizeMinTextSize="@dimen/sp8"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

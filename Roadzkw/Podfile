@@ -1,0 +1,143 @@
+platform :ios, '11.0'
+
+use_frameworks!
+
+def networking_pods
+#     pod 'RestKit', :git => 'https://github.com/RestKit/RestKit.git', :commit => '13d98d5a6a5e06656ad040013dcae149b7cf8b99'
+    pod 'Alamofire', '~> 4.7'
+#     pod 'AFNetworking', '1.3.4'
+end
+
+def firebase_pods
+    pod 'Firebase'
+    pod 'Firebase/Core'
+    pod 'Firebase/Messaging'
+end
+
+def shared_helpers_pods
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'IQKeyboardManagerSwift', '6.2.1'
+    pod 'MagicalRecord', '2.3.2'
+    pod 'DZNEmptyDataSet', '1.8.1'
+#     pod 'CocoaDebug', '0.8.0'
+    
+end
+
+def base_helpers_pods
+    pod 'MWPhotoBrowser', '2.1.1'
+    pod 'MFSideMenu', '0.5.5'
+    pod 'MD5Digest', '1.1.0'
+    pod 'SDWebImage'#, '~> 4.0' #https://github.com/rs/SDWebImage
+    pod 'FDTake', '3.0.0'
+    pod 'MIBlurPopup'
+    pod 'DateToolsSwift'
+    pod 'DateTools'
+    pod 'SwifterSwift'
+    pod 'SwiftPullToRefresh', '2.0.0'
+    pod 'UINavigationBar+Addition'
+    pod 'UITextView+Placeholder'
+    pod 'EZSwiftExtensions'
+    
+end
+
+
+def secondary_helpers_pods
+    pod 'NSURL+QueryDictionary', '1.1.0'
+    pod 'NYXImagesKit', '2.3'
+    pod 'BlocksKit', '2.2.5'
+    pod 'FXImageView', '1.3.5'
+    pod 'FormatterKit', '1.8.0'
+    pod 'SKSTableView', '0.0.2'
+    pod 'BFKit', '1.9.3'
+    pod 'FCFileManager', '1.0.18'
+    pod 'JVFloatLabeledTextField'  #https://github.com/jverdi/JVFloatLabeledTextField
+    
+end
+
+def project_base_pods
+    pod 'FaceAware' ,'1.2.0'#https://github.com/BeauNouvelle/FaceAware
+    pod 'SZTextView' ,'1.2.1' #https://github.com/glaszig/SZTextView
+    pod 'SHMultipleSelect'
+    pod 'HCSStarRatingView'
+    pod 'AFSoundManager'
+    pod 'XLPagerTabStrip', '~> 7.0'
+    pod 'FSCalendar'# https://github.com/WenchaoD/FSCalendar
+    
+end
+
+def custom_pods
+    pod 'LGSideMenuController'
+    pod 'FSPagerView'
+    pod 'XCDYouTubeKit', '~> 2.8'
+    pod 'YoutubeKit'
+    #pod 'AlertsPickers',:git => "https://gitlab.com/altauib/AlertsPickersPod.git"
+    pod 'BEMCheckBox'
+    pod 'ObjectMapper', '~> 3.4'
+    pod 'SwiftLocation', '~> 3.1.0'
+    pod 'Sheriff'
+    pod 'RLBAlertsPickers', '~> 1.1.1'
+end
+
+target 'Roadzkw' do
+    
+    networking_pods
+    shared_helpers_pods
+    base_helpers_pods
+    custom_pods
+    firebase_pods
+    #secondary_helpers_pods
+    #project_base_pods
+    
+end
+
+post_install do |installer|
+    tagretBuildSettings = {
+        "_" => {
+            "ENABLE_BITCODE" => "YES",
+            "SWIFT_VERSION" => "4.2"
+        },
+        "FDTake" => {
+            "SWIFT_VERSION" => "4.2"
+        },
+        "IQKeyboardManagerSwift" => {
+            "SWIFT_VERSION" => "4.2"
+        },
+        "SwiftPullToRefresh" => {
+            "SWIFT_VERSION" => "4.0"
+        },
+        "SwifterSwift" => {
+            "SWIFT_VERSION" => "4.2"
+        },
+        
+        "MIBlurPopup" => {
+            "SWIFT_VERSION" => "4.0"
+        },
+        "EZSwiftExtensions" => {
+            "SWIFT_VERSION" => "4.0"
+        },
+        #"AlertsPickers" => {
+        #    "SWIFT_VERSION" => "4.0"
+        #},
+        
+    }
+    
+    installer.pods_project.targets.each do |target|
+        
+        # Global Config
+        target_settings = tagretBuildSettings['_']
+        target.build_configurations.each do |config|
+            config.build_settings.merge! target_settings
+        end
+        
+        # Custom Config
+        if tagretBuildSettings.has_key?(target.name) then
+            target_settings = tagretBuildSettings[target.name]
+            target.build_configurations.each do |config|
+                # puts "#{target.name} - #{config.name} - #{target_settings}"
+                config.build_settings.merge! target_settings
+            end
+        end
+    end
+end
+

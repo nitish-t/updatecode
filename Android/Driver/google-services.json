@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "1084454451319",
+    "firebase_url": "https://roadz-5ca89.firebaseio.com",
+    "project_id": "roadz-5ca89",
+    "storage_bucket": "roadz-5ca89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084454451319:android:d0c9d1640f066e5b576e72",
+        "android_client_info": {
+          "package_name": "com.app.roadz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084454451319-8nu3o07p3p29fn3j6gi5fof9g0uop95i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.roadz",
+            "certificate_hash": "8ff2c97e4cd67e62b410efd959c2599eda6ba1da"
+          }
+        },
+        {
+          "client_id": "1084454451319-nfd3sq6ebdqgonl2c8qb2oq78n3je272.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLX-L7tDQU5EO_ptpENsxcSJnI9kcRXPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084454451319-nfd3sq6ebdqgonl2c8qb2oq78n3je272.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1084454451319-m53b3hmeanbtcvajrjch8f1asmm5u1oi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.line.roadz1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084454451319:android:3b8c93eb174546cb576e72",
+        "android_client_info": {
+          "package_name": "com.app.roadzdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084454451319-nfd3sq6ebdqgonl2c8qb2oq78n3je272.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLX-L7tDQU5EO_ptpENsxcSJnI9kcRXPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084454451319-nfd3sq6ebdqgonl2c8qb2oq78n3je272.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1084454451319-m53b3hmeanbtcvajrjch8f1asmm5u1oi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.line.roadz1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

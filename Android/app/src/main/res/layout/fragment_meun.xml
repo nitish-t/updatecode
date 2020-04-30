@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.roadz.modules.Home.Menu.MenuFragment_ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="#DEDFE0"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/notLoginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/d80"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d20"
+            android:layout_marginTop="@dimen/d80"
+            android:layout_marginEnd="@dimen/d20"
+            android:gravity="start|center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginBottom="@dimen/d5"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="start|center"
+                android:text="Sager Al Sager"
+                android:textColor="#333132"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:layout_marginBottom="@dimen/d10"
+                android:gravity="start|center"
+                android:text="S.alsager@outlook.com"
+                android:textColor="#333132"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginStart="@dimen/d20"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginEnd="@dimen/d20"
+            android:background="#333132" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/d20"
+            android:layout_marginTop="@dimen/d20"
+            android:layout_marginEnd="@dimen/d20"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false" />
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="@dimen/d20"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginEnd="@dimen/d20"
+            android:gravity="start|center">
+
+            <ImageView
+                android:id="@+id/facebookBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d44"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:paddingStart="@dimen/d5"
+                android:paddingTop="@dimen/d12"
+                android:paddingEnd="@dimen/d5"
+                android:paddingBottom="@dimen/d12"
+                android:src="@drawable/ic_menu_facebook" />
+
+            <ImageView
+                android:id="@+id/twitterBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d44"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:paddingStart="@dimen/d5"
+                android:paddingTop="@dimen/d14"
+                android:paddingEnd="@dimen/d5"
+                android:paddingBottom="@dimen/d14"
+                android:src="@drawable/ic_menu_twitter" />
+
+            <ImageView
+                android:id="@+id/instagramBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d44"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:paddingStart="@dimen/d5"
+                android:paddingTop="@dimen/d14"
+                android:paddingEnd="@dimen/d5"
+                android:paddingBottom="@dimen/d14"
+                android:src="@drawable/ic_menu_instagram" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginStart="@dimen/d20"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginEnd="@dimen/d20"
+            android:layout_marginBottom="@dimen/sp20"
+            android:background="#333132" />
+
+        <TextView
+            android:id="@+id/poweredByLineBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d20"
+            android:layout_marginEnd="@dimen/d20"
+            android:layout_marginBottom="@dimen/sp20"
+            android:visibility="gone"
+            android:fontFamily="@font/hkgrotesk_semibold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="start|center"
+            android:padding="@dimen/d10"
+            android:text="@string/powered_by_line"
+            android:textColor="#333132"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+
+</com.app.roadz.modules.Home.Menu.MenuFragment_>
+

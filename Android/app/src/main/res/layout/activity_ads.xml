@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+
+    <com.app.roadz.Utils.RtlViewPager.RtlViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="locale" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/skip_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="center"
+                android:text="@string/skip"
+                android:background="@drawable/next_btn_bg"
+                android:paddingRight="@dimen/d16"
+                android:paddingLeft="@dimen/d16"
+                android:paddingTop="@dimen/d8"
+                android:paddingBottom="@dimen/d8"
+                android:textColor="#ffffff"
+                android:shadowColor="#333132"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/next_btn"
+                android:layout_toEndOf="@+id/skip_btn"
+                android:gravity="center">
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/pageIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layoutDirection="locale"
+                    app:piv_animationType="scale"
+                    app:piv_interactiveAnimation="true"
+                    app:piv_padding="2dp"
+                    app:piv_radius="6dp"
+                    app:piv_rtl_mode="auto"
+                    app:piv_selectedColor="#FFFFFF"
+                    app:piv_unselectedColor="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="center"
+                android:background="@drawable/next_btn_bg"
+                android:text="@string/next"
+                android:paddingRight="@dimen/d16"
+                android:paddingLeft="@dimen/d16"
+                android:paddingTop="@dimen/d8"
+                android:paddingBottom="@dimen/d8"
+                android:shadowColor="#333132"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

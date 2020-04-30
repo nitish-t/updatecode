@@ -1,0 +1,78 @@
+<resources>
+
+
+    <string name="time_ago_seconds">less than minute</string>
+    <string name="time_ago_minute">minute</string>
+    <string name="time_ago_minutes">%d minutes</string>
+    <string name="time_ago_hour">Hour</string>
+    <string name="time_ago_hours">about %d Hours</string>
+    <string name="time_ago_day">day</string>
+    <string name="time_ago_days">%d days</string>
+    <string name="time_ago_month">Month</string>
+    <string name="time_ago_months">%d Months</string>
+    <string name="time_ago_year">Year</string>
+    <string name="time_ago_years">%d Years</string>
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">since</string>
+    <string name="seconds">seconds</string>
+
+
+    <plurals name="time_ago_seconds">
+        <item quantity="zero">second</item>
+        <item quantity="one">second</item>
+        <item quantity="two">second</item>
+        <item quantity="few">%d second</item>
+        <item quantity="many">%d second</item>
+        <item quantity="other">%d second</item>
+    </plurals>
+    <plurals name="time_ago_minutes">
+        <item quantity="zero">minute</item>
+        <item quantity="one">minute</item>
+        <item quantity="two">minute</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="many">%d minute</item>
+        <item quantity="other">%d minute</item>
+    </plurals>
+    <plurals name="time_ago_hours">
+        <item quantity="zero">hour</item>
+        <item quantity="one">hour</item>
+        <item quantity="two">hour</item>
+        <item quantity="few">%d hours</item>
+        <item quantity="many">%d hours</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="time_ago_days">
+        <item quantity="zero">day</item>
+        <item quantity="one">day</item>
+        <item quantity="two">days</item>
+        <item quantity="few">%d day</item>
+        <item quantity="many">%d day</item>
+        <item quantity="other">%d day</item>
+    </plurals>
+
+    <plurals name="time_ago_week">
+        <item quantity="zero">week</item>
+        <item quantity="one">week</item>
+        <item quantity="two">week</item>
+        <item quantity="few">%d weeks</item>
+        <item quantity="many">%d weeks</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="time_ago_month">
+        <item quantity="zero">Month</item>
+        <item quantity="one">Month</item>
+        <item quantity="two">Months</item>
+        <item quantity="few">%d Months</item>
+        <item quantity="many">%d Months</item>
+        <item quantity="other">%d Months</item>
+    </plurals>
+
+    <plurals name="time_ago_year">
+        <item quantity="zero">Year</item>
+        <item quantity="one">Year</item>
+        <item quantity="two">Years</item>
+        <item quantity="few">%d Years</item>
+        <item quantity="many">%d Years</item>
+        <item quantity="other">%d Years</item>
+    </plurals>
+</resources>

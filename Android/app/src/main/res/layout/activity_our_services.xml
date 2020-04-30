@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_maintenance"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/services_bg_color_view"-->
+            <!--android:fontFamily="@font/hkgrotesk_semibold"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/maintenance"-->
+            <!--android:textColor="@drawable/services_text_color_view"-->
+            <!--android:textSize="@dimen/sp16" />-->
+
+        <TextView
+            android:id="@+id/tv_emergency"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/services_bg_color_view_st2"
+            android:fontFamily="@font/hkgrotesk_semibold"
+            android:gravity="center"
+            android:text="@string/emergency"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d30"
+                android:layout_marginEnd="@dimen/d30"
+                android:fontFamily="@font/hkgrotesk_regular"
+                android:gravity="start|center"
+                android:paddingTop="@dimen/d20"
+                android:paddingBottom="@dimen/d16"
+                android:lineSpacingExtra="@dimen/d8"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit neque, aliquet eget nibh quis, porta laoreet ligula. Pellentesque placerat vestibulum nunc, non fermentum ante iaculis ac. Sed pellentesque "
+                android:textAlignment="viewStart"
+                android:textColor="#848384"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

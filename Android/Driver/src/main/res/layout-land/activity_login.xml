@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:gravity="top|center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/d40"
+                android:paddingBottom="@dimen/d10">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/logo_layout" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/vendor_login"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d20"
+                        android:layout_marginBottom="@dimen/d20"
+                        android:layout_weight=".4"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/d20"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtuserNAme"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:text="@string/email"
+                                android:textColor="#333132"
+                                android:textSize="@dimen/sp26"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:layout_marginTop="@dimen/d5"
+                                android:background="@drawable/edt_login_bg"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:hint="@string/enter_email"
+                                android:inputType="textEmailAddress"
+                                android:lines="1"
+                                android:minHeight="@dimen/d54"
+                                android:paddingStart="@dimen/d16"
+                                android:paddingEnd="@dimen/d20"
+                                android:text=""
+                                android:textAlignment="viewStart"
+                                android:textColor="#848384"
+                                android:textColorHint="#848384"
+                                android:textSize="@dimen/sp18" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:text="@string/password"
+                                android:textColor="#333132"
+                                android:textSize="@dimen/sp26"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edtPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start|center"
+                                android:layout_marginTop="@dimen/d5"
+                                android:background="@drawable/edt_login_bg"
+                                android:fontFamily="@font/hkgrotesk_bold"
+                                android:gravity="start|center"
+                                android:hint="********"
+                                android:inputType="textPassword"
+                                android:lines="1"
+                                android:minHeight="@dimen/d54"
+                                android:paddingStart="@dimen/d16"
+                                android:paddingEnd="@dimen/d20"
+                                android:text=""
+                                android:textAlignment="viewStart"
+                                android:textColor="#848384"
+                                android:textColorHint="#848384"
+                                android:textSize="@dimen/sp18" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/loginBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/d40"
+                            android:background="@drawable/login_btn_bg"
+                            android:fontFamily="@font/hkgrotesk_bold"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:minHeight="@dimen/d54"
+                            android:text="@string/log_in"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/sp26" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/viewSwipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:minHeight="@dimen/d150"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/carRecycler"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="@dimen/d10"
+                                    android:paddingBottom="@dimen/d10"
+                                    android:visibility="visible" />
+
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:id="@+id/addNewCarBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/d30"
+                                android:layout_marginTop="@dimen/d10"
+                                android:layout_marginRight="@dimen/d30"
+                                android:layout_marginBottom="@dimen/d20"
+                                android:background="@drawable/btn_bg"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center"
+                                android:minHeight="@dimen/d40">
+
+                                <ImageView
+                                    android:layout_width="@dimen/d26"
+                                    android:layout_height="@dimen/d26"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/d14"
+                                    android:src="@drawable/ic_menu_car"
+                                    android:tint="@color/white" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/hkgrotesk_bold"
+                                    android:gravity="center"
+                                    android:lines="1"
+                                    android:text="@string/add_new_car"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvtile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/d10"
+                            android:fontFamily="@font/hkgrotesk_bold"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:text="@string/choose_the_problem"
+                            android:textColor="#333132"
+                            android:textSize="@dimen/sp20"
+                            android:visibility="gone"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/servicesRecycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/d10"
+                                android:paddingBottom="@dimen/d10"
+                                android:layout_marginLeft="@dimen/d12"
+                                android:layout_marginRight="@dimen/d12"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <FrameLayout
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginBottom="@dimen/d20"
+                android:background="@drawable/btn_bg"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:minHeight="@dimen/d40">
+
+                <TextView
+                    android:id="@+id/proceedBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="@string/proceed1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/d24"
+                    android:layout_height="@dimen/d24"
+                    android:layout_gravity="end|center"
+                    android:layout_marginStart="@dimen/d14"
+                    android:layout_marginEnd="@dimen/d20"
+                    android:src="@drawable/ic_next_arrow" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorAccent" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

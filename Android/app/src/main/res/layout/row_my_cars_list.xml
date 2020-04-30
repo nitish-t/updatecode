@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.roadz.modules.MyCars.MyCarsListRow_ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d20"
+        android:paddingRight="@dimen/d20">
+
+        <LinearLayout
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingTop="@dimen/d6"
+            android:paddingBottom="@dimen/d6">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="start|center"
+                android:paddingTop="@dimen/d10"
+                android:paddingBottom="@dimen/d10"
+                android:text="Hyundai Verna 2018"
+                android:textAlignment="viewStart"
+                android:textColor="#263231"
+                android:textSize="@dimen/sp17" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="start|center_vertical"
+                android:paddingTop="@dimen/d10"
+                android:paddingBottom="@dimen/d10"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#263231"
+                android:textSize="@dimen/sp10" />
+
+            <ImageView
+                android:id="@+id/indicatorIcon"
+                android:layout_width="@dimen/d14"
+                android:layout_height="@dimen/d14"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_marginEnd="@dimen/d10"
+                android:src="@drawable/ic_spinner_indicator"
+                android:tint="#848384" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".7dp"
+            android:background="#848384" />
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d5"
+            android:paddingTop="@dimen/d10"
+            android:paddingBottom="@dimen/d10"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/order_id1"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/tv_OrderID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#848384"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".8"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/plate_number"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/tv_plate_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="16 - 23924"
+                        android:textAlignment="center"
+                        android:textColor="#848384"
+                        android:textSize="@dimen/sp14"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+
+                        android:id="@+id/llcardplate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <Button
+                            android:id="@+id/btn_add"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/_2sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:background="@drawable/btn_bg"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:text="@string/save"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/sp16" />
+
+                        <EditText
+                            android:id="@+id/etcarplatenumb"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edt_plate_bg"
+                            android:fontFamily="@font/hkgrotesk_regular"
+                            android:gravity="start|center"
+                            android:hint="XX-XXXXX"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textAlignment="center"
+
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/car_color"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/tv_car_color"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="White"
+                        android:textAlignment="center"
+                        android:textColor="#848384"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subscription_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".8"
+                            android:fontFamily="@font/hkgrotesk_bold"
+                            android:gravity="start|center"
+                            android:text="@string/subscription_started"
+                            android:textAlignment="viewStart"
+                            android:textColor="#848384"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/tv_subscription_started"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:fontFamily="@font/hkgrotesk_bold"
+                            android:text="07/ 08 / 2019"
+                            android:textAlignment="center"
+                            android:textColor="#848384"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".8"
+                            android:fontFamily="@font/hkgrotesk_bold"
+                            android:gravity="start|center"
+                            android:text="@string/subscription_end"
+                            android:textAlignment="viewStart"
+                            android:textColor="#848384"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/tv_subscription_end"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:fontFamily="@font/hkgrotesk_bold"
+                            android:gravity="start|center"
+                            android:text="07 / 08 / 2020"
+                            android:textAlignment="center"
+                            android:textColor="#848384"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_subscription_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="center"
+                        android:text="@string/no_subscription"
+                        android:textColor="#848384"
+                        android:textSize="@dimen/sp14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:background="#848384" />
+
+                <LinearLayout
+                    android:id="@+id/deleteLLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginTop="@dimen/d10"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/d20">
+
+                    <ImageView
+                        android:layout_width="@dimen/d14"
+                        android:layout_height="@dimen/d14"
+                        android:layout_marginEnd="@dimen/d10"
+                        android:src="@drawable/ic_delete_car" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_medium"
+                        android:gravity="start|center"
+                        android:text="@string/delete"
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_pay"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/_3sdp"
+                        android:background="@drawable/btn_bg"
+                        android:text="@string/pay"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+
+
+</com.app.roadz.modules.MyCars.MyCarsListRow_>

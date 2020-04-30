@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.roadzdriver.modules.PreviousRequests.PreviousRequestsListRow_ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="33dp"
+            android:background="@drawable/home_row_bg"
+            android:paddingEnd="33dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/d10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/req"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_req"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="10122"
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/name_order"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/number"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/breakdown_services"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_breakdown_services"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/plate"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_plate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/car_model"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_car_model"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/name"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_vendor_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/requestdate"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_car_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/requesttime"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_car_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/enddate"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_endcar_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/endtime"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_end_car_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text="@string/status"
+                        android:textAlignment="viewStart"
+                        android:textColor="#848384"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_car_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_weight="1.2"
+                        android:fontFamily="@font/hkgrotesk_bold"
+                        android:gravity="start|center"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="#333132"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_gravity="end|center"
+            android:background="@drawable/p_r_d_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hkgrotesk_bold"
+                android:gravity="center"
+                android:text="@string/done"
+                android:textColor="#B2E1E3"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</com.app.roadzdriver.modules.PreviousRequests.PreviousRequestsListRow_>

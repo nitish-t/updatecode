@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_inner" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginRight="@dimen/d20"
+                    android:nestedScrollingEnabled="false" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d20"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="center"
+                    android:text="@string/lightfix_emergency_package_for"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/carNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:layout_marginTop="@dimen/d5"
+                    android:layout_marginRight="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="@drawable/ic_servies_subscription_car_bg"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20"
+                    android:text="Toyota Camry 2018"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="center"
+                    android:text="@string/subscribe_msg"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/priseTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="center"
+                    android:text="@string/kd_10_000"
+                    android:textColor="#333132"
+                    android:textSize="@dimen/sp32" />
+
+                <TextView
+                    android:id="@+id/subscribeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d50"
+                    android:layout_marginTop="@dimen/d20"
+                    android:layout_marginRight="@dimen/d50"
+                    android:layout_marginBottom="@dimen/d30"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:minHeight="@dimen/d44"
+                    android:text="@string/subscribe"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorAccent" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_menu" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drowarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d10"
+            android:layoutDirection="locale"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginTop="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/d10">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:background="@drawable/edt_login_bg"
+                    android:fontFamily="@font/hkgrotesk_bold"
+                    android:gravity="start|center"
+                    android:hint="@string/search_by_phone_number"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:imeOptions="actionSearch"
+                    android:minHeight="@dimen/d38"
+                    android:paddingStart="@dimen/d16"
+                    android:paddingEnd="@dimen/d20"
+                    android:text=""
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="#848384"
+                    android:textColorHint="#848384"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d10">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.malinskiy.superrecyclerview.SuperRecyclerView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/d20"
+                app:layout_empty="@layout/empty_view"
+                app:layout_moreProgress="@layout/progressbar_item"
+                app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+                app:recyclerClipToPadding="false"
+                app:recyclerPadding="0dp"
+                app:scrollbarStyle="insideInset" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/menu_layout"
+            android:name="com.app.roadzdriver.modules.Home.Menu.MenuFragment_"
+            android:layout_width="@dimen/d250"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

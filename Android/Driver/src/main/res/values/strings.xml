@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Roadz Vendor</string>
+
+    <string name="channel_name">channel name</string>
+    <string name="channel_description">channel_description</string>
+
+
+    <string name="unexpected_error">An unexpected error occurred, check your network connection</string>
+
+
+    <string name="logout_required">Sign out</string>
+    <string name="logout_required_msg"> Are you sure you want to sign out ?</string>
+    <string name="cancel">No</string>
+    <string name="cancel2">cancel</string>
+    <string name="yes">Yes</string>
+
+    <string name="required">required</string>
+    <string name="required_field"> This field is required</string>
+    <string name="too_small"> Password must exceed 6 fields</string>
+    <string name="add_correct_phone_num"> The phone number must be of 14 digits</string>
+    <string name="similar_pass"> Please make sure your passwords match</string>
+    <string name="correct_email"> Please enter a valid email address</string>
+    <string name="ok">OK</string>
+    <string name="No">No</string>
+
+    <string name="change_language">Change Language</string>
+    <string name="change_language_msg"> Are you sure you want to change the language?</string>
+    <string name="language">Language</string>
+    <string name="userName">Username</string>
+    <string name="enter_username">enter username</string>
+    <string name="password">Password</string>
+    <string name="vendor_login">Vendor login</string>
+    <string name="log_in">LOG IN</string>
+    <string name="email">Email</string>
+    <string name="enter_email">enter email</string>
+    <string name="settings">Settings</string>
+    <string name="previous_requests">Previous requests</string>
+    <string name="pending_requests">%1$s Pending Requests…</string>
+
+    <string name="no_data">No Data</string>
+    <string name="name_order">Name:</string>
+    <string name="number">Number:</string>
+    <string name="breakdown_services">Breakdown Services:</string>
+    <string name="plate">Plate #:</string>
+    <string name="car_model">Car Model:</string>
+    <string name="request_is_done">Request is Done</string>
+    <string name="sure_msg">Are you Sure?</string>
+    <string name="order_status_successfully">Order status changed successfully</string>
+    <string name="language_switcher">Language Switcher</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="req">Req#:</string>
+    <string name="done">DONE</string>
+    <string name="search_by_phone_number">Search by phone number</string>
+    <string name="share_using">Share using</string>
+    <string name="cancel_conf">Are you sure about cancel the order?</string>
+    <string name="new_order">You have a new order</string>
+    <string name="KD">KD</string>
+    <string name="date">Date:</string>
+    <string name="order_id1">Reference ID :</string>
+    <string name="name">name:</string>
+    <string name="status">status:</string>
+    <string name="time">time</string>
+    <string name="enddate">End Date</string>
+    <string name="endtime">End time</string>
+    <string name="requestdate">Request date</string>
+    <string name="requesttime">Request time</string>
+    <string name="color">Car color</string>
+</resources>

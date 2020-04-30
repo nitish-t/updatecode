@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AndroidImageSlider/AndroidImageSlider.iml" filepath="$PROJECT_DIR$/../AndroidImageSlider/AndroidImageSlider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Driver/Driver.iml" filepath="$PROJECT_DIR$/../Driver/Driver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LightFixAppliccation.iml" filepath="$PROJECT_DIR$/../LightFixAppliccation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SuperRecyclerView/SuperRecyclerView.iml" filepath="$PROJECT_DIR$/../SuperRecyclerView/SuperRecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../filepicker/filepicker.iml" filepath="$PROJECT_DIR$/../filepicker/filepicker.iml" />
+    </modules>
+  </component>
+</project>

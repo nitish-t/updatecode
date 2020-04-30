@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/d30"
+                android:paddingBottom="@dimen/d30"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_toolbar_logo" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d30"
+                android:layout_marginEnd="@dimen/d30"
+                android:lineSpacingExtra="@dimen/d8"
+                android:fontFamily="@font/hkgrotesk_regular"
+                android:gravity="start|center"
+                android:paddingTop="@dimen/d10"
+                android:paddingBottom="@dimen/d16"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit neque, aliquet eget nibh quis, porta laoreet ligula. Pellentesque placerat vestibulum nunc, non fermentum ante iaculis ac. Sed pellentesque "
+                android:textAlignment="viewStart"
+                android:textColor="#333132"
+                android:textSize="@dimen/sp16" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_margin="@dimen/d10" />
+
+</LinearLayout>

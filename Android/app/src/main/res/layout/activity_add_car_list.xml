@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_inner" />
+
+
+    <fragment
+        android:id="@+id/menu_layout"
+        android:name="com.app.roadz.modules.User.SignUp.SignUpPage2Fragment_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
